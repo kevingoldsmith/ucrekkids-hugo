@@ -1,0 +1,5 @@
+baseurl = ""
+theme = "ucrekkids"
+languageCode = "en-us"
+title = "Unit Circle Rekkids"
+MetaDataFormat = "toml"

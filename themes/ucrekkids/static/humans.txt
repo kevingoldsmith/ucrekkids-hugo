@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Kevin Goldsmith -- Designer/Developer -- @kevingoldsmith
+
+# THANKS
+
+    Kevin Stewart @kstewart
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    Hugo
+    html5boilerplate

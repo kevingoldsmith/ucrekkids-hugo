@@ -1,0 +1,55 @@
+{{ partial "headstart.html" . }}
+<style type="text/css">
+.releaselistitem {
+	display: block;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+.artistlistitem {
+	display: block;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+#artistlist {
+	clear: both;
+}
+#releaselist {
+	clear: both;
+}
+#other {
+	clear: both;
+}
+</style>
+{{ partial "headend.html" . }}
+<div id="artistlist">		
+<h1>Artists</h1>
+{{ range where .Data.Pages "Section" "artists" }}
+<div class="artistlistitem">
+	<div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname"><a href="{{ .Permalink }}">{{ .Params.artistname }}</a></div>
+</div>
+{{ end }}
+</div>
+
+<div id="releaselist">
+<h1>Releases</h1>
+{{ range where .Data.Pages "Section" "releases" }}
+<div class="releaselistitem">
+	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.jpg', 'img/{{ .Params.catalogid }}-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><a href="{{ .Permalink }}"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></a></div>
+</div>
+{{ end }}
+</div>
+
+<div id="other">
+<h1>Other</h1>
+{{ range .Data.Pages }}
+	{{ if eq .Type "page" }}
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	{{ end }}
+{{ end }}
+</div>
+	
+{{ partial "footer.html" . }}

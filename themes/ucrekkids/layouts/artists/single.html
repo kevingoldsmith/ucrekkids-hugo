@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Params.artistname }}</h1>
+<!-- FIX: fix path -->
+<img onload="getImgSrc(this, '/img/{{ .Params.image }}.jpg', '/img/{{ .Params.image }}@2X.jpg')" width="400" height="200" />
+
+		{{ .Content }}
+
+		{{ if isset .Params "albums" }}
+			<h1>Releases</h1>
+			{{ range index .Params "albums" }}
+				<a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}">{{ .name }}</a>
+			{{ end }}
+		{{ end }}
+
+		{{ if isset .Params "artistlinks" }}
+			<h1>Links</h1>
+			{{ range .Params.artistlinks }}
+				<a href="{{ .url }}">{{ .name }}</a> 
+			{{ end }}
+		{{ end }}
+
+{{ partial "footer.html" . }}

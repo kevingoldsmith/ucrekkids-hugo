@@ -1,0 +1,5 @@
++++
+artistname = ""
+Description = ""
+image = ""
++++
