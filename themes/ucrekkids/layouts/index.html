@@ -42,14 +42,5 @@
 </div>
 {{ end }}
 </div>
-
-<div id="other">
-<h1>Other</h1>
-{{ range .Data.Pages }}
-	{{ if eq .Type "page" }}
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	{{ end }}
-{{ end }}
-</div>
 	
 {{ partial "footer.html" . }}

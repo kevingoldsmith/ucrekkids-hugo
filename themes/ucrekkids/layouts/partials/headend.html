@@ -5,20 +5,14 @@
 {{ "<!--[if lt IE 7]>" | safeHtml }}
 {{ "<p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>" | safeHtml }}
 {{ "<![endif]--> " | safeHtml }}
-<div id="headandnav">
-	<div id="header" class="clearfix">
-	<div id="headlogo"><a href="{{ $baseurl }}"><img onload="getImgSrc(this, '{{ $baseurl }}/img/uclogo.png', '{{ $baseurl }}/img/uclogo@2X.png')" width="100" height="100" /></a></div>
-	<div id="headother">Unit Circle Rekkids</div>
+<div id="nav">
+	<img id="logo" onload="getImgSrc(this, '{{ $baseurl }}/img/uclogo.png', '{{ $baseurl }}/img/uclogo@2X.png')" width="50" height="50" />
+	<ul class="menu">
+		<li><a href="{{ $baseurl }}">Home</a></li>
+		<li><a href="{{ $baseurl }}/releases/">Releases</a></li>
+		<li><a href="{{ $baseurl }}/artists/">Artists</a></li>
+		<li><a href="{{ $baseurl }}/about/">About</a></li>
+	</ul>
 	<div id="socialmedia"><a class="webicon twitter small" href="http://www.twitter.com/unitcircle/">Twitter</a> <a class="webicon facebook small" href="https://www.facebook.com/UnitCircle">Facebook</a></div>
-	</div>
-	<div id="nav">
-		<img id="logo" onload="getImgSrc(this, '{{ $baseurl }}/img/uclogo.png', '{{ $baseurl }}/img/uclogo@2X.png')" width="30" height="30" />
-		<ul class="menu">
-			<li><a href="{{ $baseurl }}">Home</a></li>
-			<li><a href="{{ $baseurl }}/releases/">Releases</a></li>
-			<li><a href="{{ $baseurl }}/artists/">Artists</a></li>
-		</ul>
-		<div id="socialmedia"><a class="webicon twitter small" href="http://www.twitter.com/unitcircle/">Twitter</a> <a class="webicon facebook small" href="https://www.facebook.com/UnitCircle">Facebook</a></div>
-	</div>
 </div>
 <div id="body" class="clearfix">

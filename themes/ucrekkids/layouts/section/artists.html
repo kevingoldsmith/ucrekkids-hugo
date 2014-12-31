@@ -1,0 +1,22 @@
+{{ partial "headstart.html" . }}
+<style type="text/css">
+.artistlistitem {
+	display: block;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+#artistlist {
+	clear: both;
+}
+</style>
+{{ partial "headend.html" . }}
+<h1>Artists</h1>
+{{ range where .Data.Pages "Section" "artists" }}
+<div class="artistlistitem">
+	<div class="artistimage"><img onload="getImgSrc(this, '../img/{{ .Params.image }}-Square.jpg', '../img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname"><a href="{{ .Permalink }}">{{ .Params.artistname }}</a></div>
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}
