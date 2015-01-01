@@ -90,5 +90,15 @@
 </description>
     </item>
     
+    <item>
+      <title>tUC013</title>
+      <link>http://localhost:1313/releases/tUC013/</link>
+      <pubDate>Thu, 01 Jun 1995 00:00:00 -0800</pubDate>
+      
+      <guid>http://localhost:1313/releases/tUC013/</guid>
+      <description>&lt;p&gt;This was Seattle based Vassily&amp;rsquo;s first and last release. It came out in June of 1995 as an edition of 500 and will not be reprinted. It was released in 1995 was Unit Circle&amp;rsquo;s first release in Seattle.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

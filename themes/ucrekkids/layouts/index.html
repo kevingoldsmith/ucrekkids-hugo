@@ -16,6 +16,7 @@
 	clear: both;
 }
 #releaselist {
+	padding-top: 1.5em;
 	clear: both;
 }
 #other {
@@ -24,7 +25,7 @@
 </style>
 {{ partial "headend.html" . }}
 <div id="artistlist">		
-<h1>Artists</h1>
+<div class="sectiontitle">Artists</div>
 {{ range where .Data.Pages "Section" "artists" }}
 <div class="artistlistitem">
 	<div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
@@ -34,7 +35,7 @@
 </div>
 
 <div id="releaselist">
-<h1>Releases</h1>
+<div class="sectiontitle">Releases</div>
 {{ range where .Data.Pages "Section" "releases" }}
 <div class="releaselistitem">
 	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.jpg', 'img/{{ .Params.catalogid }}-small@2X.jpg')" width="150" height="150" /></div>

@@ -1,0 +1,48 @@
+#albumheader {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: black;
+
+}
+#albumimage {
+	float: left;
+	padding-right: 10px;
+}
+#details {
+	clear: both;
+}
+#albuminfo {
+	overflow: hidden;
+}
+#artistname {
+	font-size: 2em;
+	font-weight: bold;
+}
+#artistname a {
+	text-decoration: none;
+}
+#albumname {
+	font-size: 1.5em;
+}
+#releaseyear {
+
+}
+#tracklist {
+	padding-top: 2em;
+}
+#tracklist #tracktitle {
+	font-weight: bold;
+}
+#tracklist ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0em;
+	padding-left: 1em;
+}
+
+#reviews {
+	padding-top: 1em;
+}
+#reviews #reviewlinks {
+	font-size: .85em;
+}

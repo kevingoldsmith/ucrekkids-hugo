@@ -1,33 +1,48 @@
-{{ partial "header.html" . }}
-
-<!--- FIX: ARTIST URL ---->
-<h1><a href="../../artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a> - {{ .Params.releasename }}</h1>
-Released: {{ .Params.releaseyear }}<br />
-<img onload="getImgSrc(this, '/img/{{ .Params.catalogid }}-large.jpg', '/img/{{ .Params.catalogid }}-large@2X.jpg')" width="400" height="400" />
-{{ .Content }}
-
+{{ partial "headstart.html" . }}
+<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/releases.css">
+{{ partial "headend.html" . }}
+<div id="albumheader">
+	<div id="albumimage">
+		<img onload="getImgSrc(this, '../../img/{{ .Params.catalogid }}-large.jpg', '../../img/{{ .Params.catalogid }}-large@2X.jpg')" width="300" height="300" />
+	</div>
+	<div id="albuminfo">
+		<div id="artistname"><a href="../../artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a></div>
+		<div id="albumname">{{ .Params.releasename }}</div>
+		<div id="releaseyear">{{ .Params.releaseyear }}</div>
+		<div id="tracklist">
+			<div id="tracktitle">Tracks</div>
+			<ul>
+			{{ range .Params.tracklist }}<li>{{ . }}</li>{{ end }}
+			</ul>
+		</div>
+	</div>
+	<div style="clear:both; padding-bottom: .5em"></div>
+</div>
+<div id="details">{{ .Content }}</div>
 {{ if or (isset .Params "storelinks") (isset .Params "streamlinks") }}
-<h2>Available from:</h2>
+<div id="storesection">
+<div class="sectiontitle">Available from:</div>
 {{ range .Params.storelinks }}<a href="{{ .url }}">{{ .store }}</a> {{ end }}
 {{ range .Params.streamlinks }}<a href="{{ .url }}">{{ .service }}</a> {{ end }}
+</div>
 {{ end }}
-
-<h2>Tracks</h2>
-<ul>
-{{ range .Params.tracklist }}<li>{{ . }}</li>{{ end }}
-</ul>
-
 {{ if isset .Params "reviews" }}
-	<h1>Reviews</h1>
+<div id="reviews">
+<div class="sectiontitle">Reviews</div>
+<div id="reviewlinks">
+	{{ if gt (len .Params.reviews) 3 }}
 	{{ range index .Params "reviews" }}
-		[ <a href="#{{ .id }}">{{ .reviewer }}</a> ]
+		[<a href="#{{ .id }}">{{ .reviewer }}</a>]
 	{{ end }}
+	{{ end }}
+</div>
 	<dl>
 	{{ range index .Params "reviews" }}
 	<dt id="{{ .id }}">{{ if isset . "url" }}<a href="{{ .url }}">{{ .reviewer }}</a>{{ else }}{{ .reviewer }}{{ end }}{{ if isset . "issue" }} - {{ .issue }}{{ end }}</dt>
 	<dd>{{ .review | safeHtml }}{{ if isset . "author" }} - {{ .author }}{{ end }}</dd>
 	{{ end }}
 </dl>
+</div>
 {{ end }}
 
 {{ partial "footer.html" . }}

@@ -8,6 +8,10 @@ image = "Intonarumori"
 [menu.artists]
 	name="Intonarumori"
 
+[[albums]]
+	name = "L-ST"
+	catalogid = "tUC090"
+
 [[artistlinks]]
 	name="Intonarumori website"
 	url = "http://intonarumori.com"

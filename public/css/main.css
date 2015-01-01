@@ -97,6 +97,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
 #nav {
     background:#b2b580;
     width: 100%;
@@ -167,6 +176,26 @@ border-left:1px solid #42432d;
     padding-left: 5px;
 }
 
+#body {
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#artist-releases {
+    float: left;
+    padding-top: 15px;
+    width: 155px;
+ }
+
+#artist-content {
+    padding-left: 170px;
+}
+
+.sectiontitle {
+    font-size: 1.25em;
+    font-weight: bolder;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
