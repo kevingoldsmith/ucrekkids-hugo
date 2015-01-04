@@ -10,6 +10,10 @@ image = "BethanyCurve"
 [[albums]]
 	name = "You Brought Us Here"
 	catalogid = "tUC074"
+	
+[[albums]]
+	name = "Skies a Crossed Sky"
+	catalogid = "tUC034"
 
 [[artistlinks]]
 	name = "Bethany Curve website"

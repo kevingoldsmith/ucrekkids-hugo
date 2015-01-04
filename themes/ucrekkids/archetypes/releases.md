@@ -6,4 +6,5 @@ releaseyear = 0
 Description = ""
 artistdirectory = ""
 tracklist = []
+coverextension = "jpg"
 +++

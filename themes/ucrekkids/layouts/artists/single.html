@@ -1,9 +1,19 @@
-{{ partial "header.html" . }}
+{{ partial "headstart.html" . }}
+<style>
+.releaseimage {
+	padding-bottom: 5px;
+}
+</style>
+{{ partial "headend.html" . }}
 <div id="artist-releases">
 {{ if isset .Params "albums" }}
 <div>RELEASES</div>
 {{ range index .Params "albums" }}
+{{ if isset . "extension" }}
+<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" width="150" height="150" /></a></div>
+{{ else }}
 <div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.jpg', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.jpg')" width="150" height="150" /></a></div>
+{{ end }}
 {{ end }}
 {{ end }}
 </div>

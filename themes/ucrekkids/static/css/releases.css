@@ -39,10 +39,20 @@
 	margin-bottom: 0em;
 	padding-left: 1em;
 }
+#tracklist .compartist {
+	font-weight: bold;
+}
 
 #reviews {
 	padding-top: 1em;
 }
 #reviews #reviewlinks {
 	font-size: .85em;
+}
+#reviews dd p:first-child {
+	margin-top: 0;
+}
+
+#reviews dd p:last-child {
+	margin-bottom: 0;
 }

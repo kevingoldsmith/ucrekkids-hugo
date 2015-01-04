@@ -12,6 +12,11 @@ image = "Intonarumori"
 	name = "L-ST"
 	catalogid = "tUC090"
 
+[[albums]]
+	name = "Sound Collages 1991-1995"
+	catalogid = "tUC018"
+	extension = "png"
+
 [[artistlinks]]
 	name="Intonarumori website"
 	url = "http://intonarumori.com"

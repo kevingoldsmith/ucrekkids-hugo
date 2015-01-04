@@ -3,16 +3,22 @@
 {{ partial "headend.html" . }}
 <div id="albumheader">
 	<div id="albumimage">
-		<img onload="getImgSrc(this, '../../img/{{ .Params.catalogid }}-large.jpg', '../../img/{{ .Params.catalogid }}-large@2X.jpg')" width="300" height="300" />
+		<img onload="getImgSrc(this, '../../img/{{ .Params.catalogid }}-large.{{ .Params.coverextension }}', '../../img/{{ .Params.catalogid }}-large@2X.{{ .Params.coverextension }}')" width="300" height="300" />
 	</div>
 	<div id="albuminfo">
-		<div id="artistname"><a href="../../artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a></div>
+		{{ if isset .Params "artistname" }}<div id="artistname"><a href="../../artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a></div>{{ end }}
 		<div id="albumname">{{ .Params.releasename }}</div>
 		<div id="releaseyear">{{ .Params.releaseyear }}</div>
 		<div id="tracklist">
 			<div id="tracktitle">Tracks</div>
 			<ul>
+			{{ if isset .Params "compilationtracklist" }}
+			{{ range .Params.compilationtracklist }}
+			<li><span class="compartist">{{ if isset . "artisturl" }}<a href="../../artists/{{ .artisturl }}">{{ .artist }}</a>{{ else }}{{ .artist }}{{ end }}</span> - {{ .title }}</li>
+			{{ end }}
+			{{ else }}
 			{{ range .Params.tracklist }}<li>{{ . }}</li>{{ end }}
+			{{ end }}
 			</ul>
 		</div>
 	</div>

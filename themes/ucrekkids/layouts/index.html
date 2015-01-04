@@ -5,6 +5,7 @@
 	width: 150px;
 	float: left;
 	padding: 5px;
+	height: 220px;
 }
 .artistlistitem {
 	display: block;
@@ -37,8 +38,8 @@
 <div id="releaselist">
 <div class="sectiontitle">Releases</div>
 {{ range where .Data.Pages "Section" "releases" }}
-<div class="releaselistitem">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.jpg', 'img/{{ .Params.catalogid }}-small@2X.jpg')" width="150" height="150" /></div>
+<div class="releaselistitem" id="{{ .Params.catalogid }}">
+	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
 	<div class="releasename"><a href="{{ .Permalink }}"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></a></div>
 </div>
 {{ end }}

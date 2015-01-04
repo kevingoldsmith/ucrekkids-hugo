@@ -33,6 +33,41 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/releases/tUC046/</loc>
+    <lastmod>1998-05-05T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC045/</loc>
+    <lastmod>1997-09-01T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC041/</loc>
+    <lastmod>1997-03-01T12:01:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC034/</loc>
+    <lastmod>1996-06-01T12:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC021/</loc>
+    <lastmod>1996-03-01T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC018/</loc>
+    <lastmod>1995-09-01T11:42:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC015/</loc>
+    <lastmod>1995-07-01T10:15:39+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/releases/tUC013/</loc>
     <lastmod>1995-06-01T00:00:00-08:00</lastmod>
   </url>
