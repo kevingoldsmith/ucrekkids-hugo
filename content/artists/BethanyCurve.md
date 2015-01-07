@@ -12,8 +12,16 @@ image = "BethanyCurve"
 	catalogid = "tUC074"
 	
 [[albums]]
+	name = "Gold"
+	catalogid = "tUC046"
+	
+[[albums]]
 	name = "Skies a Crossed Sky"
 	catalogid = "tUC034"
+
+[[compilations]]
+	name = "Nocturne Concrète"
+	catalogid = "tUC021"
 
 [[artistlinks]]
 	name = "Bethany Curve website"

@@ -17,6 +17,10 @@ image = "Intonarumori"
 	catalogid = "tUC018"
 	extension = "png"
 
+[[compilations]]
+	name = "Nocturne Concrète"
+	catalogid = "tUC021"
+
 [[artistlinks]]
 	name="Intonarumori website"
 	url = "http://intonarumori.com"

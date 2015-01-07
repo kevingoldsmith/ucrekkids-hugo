@@ -1,7 +1,14 @@
 {{ partial "headstart.html" . }}
 <style>
-.releaseimage {
+#artist-releases div {
+	padding-top: 10px;
+}
+#artist-releases div:first-child {
+	padding-top: 0px;
+}
+#artist-releases .releaseimage {
 	padding-bottom: 5px;
+	padding-top: 0px;
 }
 </style>
 {{ partial "headend.html" . }}
@@ -9,6 +16,17 @@
 {{ if isset .Params "albums" }}
 <div>RELEASES</div>
 {{ range index .Params "albums" }}
+{{ if isset . "extension" }}
+<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" width="150" height="150" /></a></div>
+{{ else }}
+<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.jpg', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.jpg')" width="150" height="150" /></a></div>
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ if isset .Params "compilations" }}
+<div>COMPILATIONS</div>
+{{ range index .Params "compilations" }}
 {{ if isset . "extension" }}
 <div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" width="150" height="150" /></a></div>
 {{ else }}
