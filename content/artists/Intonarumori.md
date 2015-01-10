@@ -13,9 +13,21 @@ image = "Intonarumori"
 	catalogid = "tUC090"
 
 [[albums]]
+	name = "Material"
+	catalogid = "tUC075"
+
+[[albums]]
+	name = "Intonarumori"
+	catalogid = "tUC062"
+
+[[albums]]
 	name = "Sound Collages 1991-1995"
 	catalogid = "tUC018"
 	extension = "png"
+
+[[compilations]]
+	name = "Pleasure Vibe 2000"
+	catalogid = "tUC069"
 
 [[compilations]]
 	name = "Nocturne Concrète"

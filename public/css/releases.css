@@ -43,8 +43,18 @@
 	font-weight: bold;
 }
 
+#relatedreleases {
+	padding-top: 1em;
+}
+
+#relatedreleases .relatedcover {
+	float: left;
+	padding-right: 5px;
+}
+
 #reviews {
 	padding-top: 1em;
+	clear: both;
 }
 #reviews #reviewlinks {
 	font-size: .85em;

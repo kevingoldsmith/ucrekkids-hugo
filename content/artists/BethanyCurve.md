@@ -20,6 +20,10 @@ image = "BethanyCurve"
 	catalogid = "tUC034"
 
 [[compilations]]
+	name = "Pleasure Vibe 2000"
+	catalogid = "tUC069"
+
+[[compilations]]
 	name = "Nocturne Concrète"
 	catalogid = "tUC021"
 

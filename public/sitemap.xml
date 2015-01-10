@@ -3,8 +3,48 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2015-01-11T00:36:02+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/TheGarden/</loc>
+    <lastmod>2015-01-11T00:36:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/SubArachnoidSpace/</loc>
+    <lastmod>2015-01-11T00:05:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/PinealVentana/</loc>
+    <lastmod>2015-01-10T23:47:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/Mlumbo/</loc>
+    <lastmod>2015-01-10T23:35:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/Jupiter88/</loc>
+    <lastmod>2015-01-10T23:22:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/AmyDenio/</loc>
+    <lastmod>2015-01-10T23:04:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/BillHorist/</loc>
+    <lastmod>2015-01-10T19:50:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/artists/DegenerateArtEnsemble/</loc>
+    <lastmod>2015-01-10T08:23:31+01:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +68,33 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/releases/tUC081/</loc>
+    <lastmod>2003-01-10T07:47:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC075/</loc>
+    <lastmod>2002-05-07T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/releases/tUC074/</loc>
     <lastmod>2001-09-04T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC073/</loc>
+    <lastmod>2001-01-08T00:00:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC069/</loc>
+    <lastmod>2000-10-07T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/releases/tUC068/</loc>
+    <lastmod>2000-09-06T00:00:00-08:00</lastmod>
   </url>
   
   <url>

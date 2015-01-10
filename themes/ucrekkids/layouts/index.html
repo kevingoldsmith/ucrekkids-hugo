@@ -27,7 +27,7 @@
 {{ partial "headend.html" . }}
 <div id="artistlist">		
 <div class="sectiontitle">Artists</div>
-{{ range where .Data.Pages "Section" "artists" }}
+{{ range where .Data.Pages.ByTitle "Section" "artists" }}
 <div class="artistlistitem">
 	<div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
 	<div class="artistname"><a href="{{ .Permalink }}">{{ .Params.artistname }}</a></div>
@@ -37,7 +37,7 @@
 
 <div id="releaselist">
 <div class="sectiontitle">Releases</div>
-{{ range where .Data.Pages "Section" "releases" }}
+{{ range where .Data.Pages.ByDate.Reverse "Section" "releases" }}
 <div class="releaselistitem" id="{{ .Params.catalogid }}">
 	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
 	<div class="releasename"><a href="{{ .Permalink }}"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></a></div>

@@ -32,6 +32,20 @@
 {{ range .Params.streamlinks }}<a href="{{ .url }}">{{ .service }}</a> {{ end }}
 </div>
 {{ end }}
+{{ if isset .Params "relatedreleases" }}
+<div id="relatedreleases">
+<div class="sectiontitle">Related Releases:</div>
+{{ range .Params.relatedreleases }}
+	<div class="relatedcover"><a href="../{{ .catalogid }}/">
+{{ if isset . "coverextension" }}
+		<img onload="getImgSrc(this, '../../img/{{ .catalogid }}-small.{{ .coverextension }}', '../../img/{{ .catalogid }}-small@2X.{{ .coverextension }}')" width="150" height="150" />
+{{else}}
+		<img onload="getImgSrc(this, '../../img/{{ .catalogid }}-small.jpg', '../../img/{{ .catalogid }}-small@2X.jpg')" width="150" height="150" />
+{{end}}
+	</a></div>
+{{ end }}
+</div>
+{{ end }}
 {{ if isset .Params "reviews" }}
 <div id="reviews">
 <div class="sectiontitle">Reviews</div>
