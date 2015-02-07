@@ -77,6 +77,21 @@
     <script src="http://localhost:1313/js/vendor/modernizr-2.6.2.min.js"></script>
 
 <link rel="stylesheet" href="http://localhost:1313/css/releases.css">
+<style>
+.buybutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+.streambutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+#relatedreleases {
+	clear: both;
+}
+</style>
 </head>
 <body>
 
@@ -119,8 +134,46 @@
 
 <div id="storesection">
 <div class="sectiontitle">Available from:</div>
-<a href="http://www.cdbaby.com/cd/intonarumori">cdbaby</a> <a href="http://www.amazon.com/gp/product/B00EKEQIGM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00EKEQIGM&amp;linkCode=as2&amp;tag=booksforvirtualw">amazon</a> <a href="https://itunes.apple.com/us/album/l-st/id688593361?uo=4">itunes</a> 
-<a href="http://open.spotify.com/album/66PuHrdrLHnE5M4KeL1xlK">spotify</a> <a href="http://www.rdio.com/artist/Intonarumori/album/L-ST/">rdio</a> <a href="http://www.deezer.com/album/7649567">deezer</a> 
+
+<div class="buybutton">
+
+<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='http://www.cdbaby.com/cd/intonarumori' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
+
+</div>
+
+<div class="buybutton">
+
+<a href="http://www.amazon.com/gp/product/B00EKEQIGM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00EKEQIGM&amp;linkCode=as2&amp;tag=booksforvirtualw"><img onload="getImgSrc(this, '../../img/amazonmp3.png','../../img/amazonmp3@2X.png')" width="125" height="40" alt="amazonmp3" /></a>
+
+</div>
+
+<div class="buybutton">
+
+<a href="https://itunes.apple.com/us/album/l-st/id688593361?uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+
+</div>
+
+<div>
+
+<div class="streambutton">
+
+<a href="http://open.spotify.com/album/66PuHrdrLHnE5M4KeL1xlK"><img onload="getImgSrc(this, '../../img/spotify.png','../../img/spotify@2X.png')" width="175" height="40" alt="spotify" /></a>
+
+</div>
+
+<div class="streambutton">
+
+<a href="http://www.rdio.com/artist/Intonarumori/album/L-ST/"><img onload="getImgSrc(this, '../../img/rdio.png','../../img/rdio@2X.png')" width="116" height="40" alt="rdio" /></a>
+
+</div>
+
+<div class="streambutton">
+
+<a href="http://www.deezer.com/album/7649567"><img onload="getImgSrc(this, '../../img/deezer.png','../../img/deezer@2X.png')" width="116" height="40" alt="deezer" /></a>
+
+</div>
+
+</div>
 </div>
 
 
@@ -168,8 +221,8 @@
   ga('create', 'UA-96028-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script>
 
+<script>
 $(document).ready(function(){
   
   var images = $('img:not([src=""])');
@@ -183,3 +236,4 @@ $(document).ready(function(){
 		+ ':1313/livereload.js?mindelay=10"></'
         + 'script>')</script></body>
 </html>
+

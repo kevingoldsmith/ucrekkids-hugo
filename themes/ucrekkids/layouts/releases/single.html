@@ -1,5 +1,20 @@
 {{ partial "headstart.html" . }}
 <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/releases.css">
+<style>
+.buybutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+.streambutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+#relatedreleases {
+	clear: both;
+}
+</style>
 {{ partial "headend.html" . }}
 <div id="albumheader">
 	<div id="albumimage">
@@ -28,8 +43,36 @@
 {{ if or (isset .Params "storelinks") (isset .Params "streamlinks") }}
 <div id="storesection">
 <div class="sectiontitle">Available from:</div>
-{{ range .Params.storelinks }}<a href="{{ .url }}">{{ .store }}</a> {{ end }}
-{{ range .Params.streamlinks }}<a href="{{ .url }}">{{ .service }}</a> {{ end }}
+{{ range .Params.storelinks }}
+<div class="buybutton">
+{{ if eq .store "cdbaby" }}
+<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='{{ .url }}' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
+{{ else if eq .store "amazon" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazon.png','../../img/amazon@2X.png')" width="89" height="40" alt="{{ .store }}" /></a>
+{{ else if eq .store "amazonmp3" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazonmp3.png','../../img/amazonmp3@2X.png')" width="125" height="40" alt="{{ .store }}" /></a>
+{{ else if eq .store "itunes" }}
+<a href="{{ .url }}" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+{{ else }}
+<a href="{{ .url }}">{{ .store }}</a>
+{{ end }}
+</div>
+{{ end }}
+<div>
+{{ range .Params.streamlinks }}
+<div class="streambutton">
+{{ if eq .service "spotify" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/spotify.png','../../img/spotify@2X.png')" width="175" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "rdio" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/rdio.png','../../img/rdio@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "deezer" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/deezer.png','../../img/deezer@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
+{{ else }}
+<a href="{{ .url }}">{{ .service }}</a>
+{{ end }}
+</div>
+{{ end }}
+</div>
 </div>
 {{ end }}
 {{ if isset .Params "relatedreleases" }}

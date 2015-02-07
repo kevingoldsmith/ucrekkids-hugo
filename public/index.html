@@ -55,22 +55,11 @@
     <link rel="stylesheet" href="http://localhost:1313/css/webicons.css">
     <script src="http://localhost:1313/js/vendor/modernizr-2.6.2.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <style type="text/css">
-.releaselistitem {
-	display: block;
-	width: 150px;
-	float: left;
-	padding: 5px;
-	height: 220px;
-}
-.artistlistitem {
-	display: block;
-	width: 150px;
-	float: left;
-	padding: 5px;
-}
 #artistlist {
 	clear: both;
+	padding-top: 20px;
 }
 #releaselist {
 	padding-top: 1.5em;
@@ -78,6 +67,40 @@
 }
 #other {
 	clear: both;
+}
+#newsheader {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 2px 0;
+	height: 260px;
+}
+#newsheader #l-st #intalbum {
+	float: left;
+	padding-right: .5em;
+}
+#newsheader #years {
+	background-image: url("img/SonicFutureNow.png");
+	width: 100%;
+	height: 225px;
+	visibility: hidden;
+}
+#newsheader #years #text {
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	font-family: "Verdana", sans-serif;
+	text-shadow: 2px 2px 2px #555;
+}
+#labelmission {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+ 
+.slick-slider {
+margin-bottom: 20px;
 }
 </style>
 </head>
@@ -98,67 +121,97 @@
 	<div id="socialmedia"><a class="webicon twitter small" href="http://www.twitter.com/unitcircle/">Twitter</a> <a class="webicon facebook small" href="https://www.facebook.com/UnitCircle">Facebook</a></div>
 </div>
 <div id="body" class="clearfix">
-<div id="artistlist">		
+<div id="newsheader" class="scroller">
+	<div id="l-st">
+		<table>
+			<tr>
+				<td colspan="2">
+					<div class="sectiontitle">Latest Release</div>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="releases/tUC090/"><img onload="getImgSrc(this, 'img/tUC090-large.jpg', 'img/tUC090-large@2X.jpg')" width="225" height="225" /></a></td>
+				<td valign="top"><div style="padding-left: 5px">Unit Circle is proud to announce its' first new release in ten years. The long awaited new album from <a href="artists/Intonarumori/">Intonarumori</a>, <a href="releases/tUC090/">L-ST</a></div></td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td colspan="2">
+					<div class="sectiontitle">Next Release</div>
+				</td>
+			</tr>
+			<tr>
+				<td><img onload="getImgSrc(this, 'img/tUC091-large.jpg', 'img/tUC091-large@2X.jpg')" width="225" height="225" /></td>
+				<td valign="top"><div style="padding-left: 5px; font-weight: bold">Answers to April - Lilium</div><div style="padding-left: 5px">A first release from a new project by <a href="artists/Intonarumori/">Intonarumori</a>'s Kevin Goldsmith. A decidedly different approach, something that harkens back to the earlier work, but with a more melodic style.</div></td>
+			</tr>
+		</table>
+	</div>
+	<div id="years"><div id="text">Unit Circle Rekkids: 24 Years</div></div>
+</div>
+<div id="labelmission">Unit Circle Rekkids has been a labor of love for 24 years. Dedicated to showcasing unconventional music, unusual music, challenging music, but also beautiful music. Unit circle helped launch artists like Bill Horist, Bethany Curve, Intonarumori and SubArachnoid Space. While there was a break from releasing new albums for a while, we continued to support our existing roster and catalog. We are now beginning to once again release new music, and we continue to appreciate the support of the fans who have supported us in our mission over the last near quarter of a century.</div>
+<div id="artistlist">
 <div class="sectiontitle">Artists</div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/AmyDenio-Square.jpg', 'img/AmyDenio-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/AmyDenio/">Amy Denio</a></div>
+	<a href="http://localhost:1313/artists/AmyDenio/"><div class="artistimage"><img onload="getImgSrc(this, 'img/AmyDenio-Square.jpg', 'img/AmyDenio-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Amy Denio</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/BethanyCurve-Square.jpg', 'img/BethanyCurve-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BethanyCurve/">Bethany Curve</a></div>
+	<a href="http://localhost:1313/artists/BethanyCurve/"><div class="artistimage"><img onload="getImgSrc(this, 'img/BethanyCurve-Square.jpg', 'img/BethanyCurve-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Bethany Curve</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/BillHorist-Square.jpg', 'img/BillHorist-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BillHorist/">Bill Horist</a></div>
+	<a href="http://localhost:1313/artists/BillHorist/"><div class="artistimage"><img onload="getImgSrc(this, 'img/BillHorist-Square.jpg', 'img/BillHorist-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Bill Horist</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/DegenerateArtEnsemble-Square.jpg', 'img/DegenerateArtEnsemble-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/DegenerateArtEnsemble/">Degenerate Art Ensemble</a></div>
+	<a href="http://localhost:1313/artists/DegenerateArtEnsemble/"><div class="artistimage"><img onload="getImgSrc(this, 'img/DegenerateArtEnsemble-Square.jpg', 'img/DegenerateArtEnsemble-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Degenerate Art Ensemble</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/Intonarumori-Square.jpg', 'img/Intonarumori-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Intonarumori/">Intonarumori</a></div>
+	<a href="http://localhost:1313/artists/Intonarumori/"><div class="artistimage"><img onload="getImgSrc(this, 'img/Intonarumori-Square.jpg', 'img/Intonarumori-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Intonarumori</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/Jupiter88-Square.jpg', 'img/Jupiter88-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Jupiter88/">Jupiter 88</a></div>
+	<a href="http://localhost:1313/artists/Jupiter88/"><div class="artistimage"><img onload="getImgSrc(this, 'img/Jupiter88-Square.jpg', 'img/Jupiter88-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Jupiter 88</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/Mlumbo-Square.jpg', 'img/Mlumbo-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Mlumbo/">M&#39;lumbo</a></div>
+	<a href="http://localhost:1313/artists/Mlumbo/"><div class="artistimage"><img onload="getImgSrc(this, 'img/Mlumbo-Square.jpg', 'img/Mlumbo-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">M&#39;lumbo</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/PinealVentana-Square.jpg', 'img/PinealVentana-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/PinealVentana/">Pineal Ventana</a></div>
+	<a href="http://localhost:1313/artists/PinealVentana/"><div class="artistimage"><img onload="getImgSrc(this, 'img/PinealVentana-Square.jpg', 'img/PinealVentana-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Pineal Ventana</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/SubArachnoidSpace-Square.jpg', 'img/SubArachnoidSpace-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/SubArachnoidSpace/">SubArachnoid Space</a></div>
+	<a href="http://localhost:1313/artists/SubArachnoidSpace/"><div class="artistimage"><img onload="getImgSrc(this, 'img/SubArachnoidSpace-Square.jpg', 'img/SubArachnoidSpace-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">SubArachnoid Space</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/TheGarden-Square.jpg', 'img/TheGarden-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/TheGarden/">The Garden</a></div>
+	<a href="http://localhost:1313/artists/TheGarden/"><div class="artistimage"><img onload="getImgSrc(this, 'img/TheGarden-Square.jpg', 'img/TheGarden-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">The Garden</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/UnFolkUs-Square.jpg', 'img/UnFolkUs-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/UnFolkUs/">UnFolkUs</a></div>
+	<a href="http://localhost:1313/artists/UnFolkUs/"><div class="artistimage"><img onload="getImgSrc(this, 'img/UnFolkUs-Square.jpg', 'img/UnFolkUs-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">UnFolkUs</div></a>
 </div>
 
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/Vassily-Square.jpg', 'img/Vassily-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Vassily/">Vassily</a></div>
+	<a href="http://localhost:1313/artists/Vassily/"><div class="artistimage"><img onload="getImgSrc(this, 'img/Vassily-Square.jpg', 'img/Vassily-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">Vassily</div></a>
 </div>
 
 </div>
@@ -167,118 +220,118 @@
 <div class="sectiontitle">Releases</div>
 
 <div class="releaselistitem" id="tUC090">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC090-small.jpg', 'img/tUC090-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC090/"><div class="releaseartist">Intonarumori</div><div class="releasename">L-ST</div></a></div>
+	<a href="http://localhost:1313/releases/tUC090/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC090-small.jpg', 'img/tUC090-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Intonarumori</div><div class="albumname">L-ST</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC081">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC081-small.jpg', 'img/tUC081-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC081/"><div class="releaseartist">Jupiter 88</div><div class="releasename">Red Go</div></a></div>
+	<a href="http://localhost:1313/releases/tUC081/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC081-small.jpg', 'img/tUC081-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Jupiter 88</div><div class="albumname">Red Go</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC075">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC075-small.jpg', 'img/tUC075-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC075/"><div class="releaseartist">Intonarumori</div><div class="releasename">Material</div></a></div>
+	<a href="http://localhost:1313/releases/tUC075/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC075-small.jpg', 'img/tUC075-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Intonarumori</div><div class="albumname">Material</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC074">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC074-small.jpg', 'img/tUC074-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC074/"><div class="releaseartist">Bethany Curve</div><div class="releasename">You Brought Us Here</div></a></div>
+	<a href="http://localhost:1313/releases/tUC074/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC074-small.jpg', 'img/tUC074-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Bethany Curve</div><div class="albumname">You Brought Us Here</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC073">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC073-small.jpg', 'img/tUC073-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC073/"><div class="releaseartist">The Degenerate Art Ensemble</div><div class="releasename">Rinko</div></a></div>
+	<a href="http://localhost:1313/releases/tUC073/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC073-small.jpg', 'img/tUC073-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">The Degenerate Art Ensemble</div><div class="albumname">Rinko</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC069">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC069-small.jpg', 'img/tUC069-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC069/"><div class="releaseartist"></div><div class="releasename">Pleasure Vibe 2000: A Unit Circle Sampler</div></a></div>
+	<a href="http://localhost:1313/releases/tUC069/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC069-small.jpg', 'img/tUC069-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist"></div><div class="albumname">Pleasure Vibe 2000: A Unit Circle Sampler</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC068">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC068-small.jpg', 'img/tUC068-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC068/"><div class="releaseartist">Amy Denio</div><div class="releasename">Tattoo</div></a></div>
+	<a href="http://localhost:1313/releases/tUC068/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC068-small.jpg', 'img/tUC068-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Amy Denio</div><div class="albumname">Tattoo</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC067">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC067-small.jpg', 'img/tUC067-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC067/"><div class="releaseartist">Pineal Ventana</div><div class="releasename">Axes to Ice</div></a></div>
+	<a href="http://localhost:1313/releases/tUC067/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC067-small.jpg', 'img/tUC067-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Pineal Ventana</div><div class="albumname">Axes to Ice</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC066">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC066-small.jpg', 'img/tUC066-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC066/"><div class="releaseartist">Bill Horist</div><div class="releasename">Songs From the Nerve Wheel</div></a></div>
+	<a href="http://localhost:1313/releases/tUC066/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC066-small.jpg', 'img/tUC066-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Bill Horist</div><div class="albumname">Songs From the Nerve Wheel</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC062">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC062-small.jpg', 'img/tUC062-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC062/"><div class="releaseartist">Intonarumori</div><div class="releasename">Intonarumori</div></a></div>
+	<a href="http://localhost:1313/releases/tUC062/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC062-small.jpg', 'img/tUC062-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Intonarumori</div><div class="albumname">Intonarumori</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC061">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC061-small.jpg', 'img/tUC061-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC061/"><div class="releaseartist">M&#39;lumbo</div><div class="releasename">Spinning Tourists in a City of Ghosts</div></a></div>
+	<a href="http://localhost:1313/releases/tUC061/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC061-small.jpg', 'img/tUC061-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">M&#39;lumbo</div><div class="albumname">Spinning Tourists in a City of Ghosts</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC060">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC060-small.jpg', 'img/tUC060-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC060/"><div class="releaseartist">Amy Denio</div><div class="releasename">Greatest Hits</div></a></div>
+	<a href="http://localhost:1313/releases/tUC060/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC060-small.jpg', 'img/tUC060-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Amy Denio</div><div class="albumname">Greatest Hits</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC058">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC058-small.jpg', 'img/tUC058-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC058/"><div class="releaseartist">Pineal Ventana</div><div class="releasename">Malpractice</div></a></div>
+	<a href="http://localhost:1313/releases/tUC058/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC058-small.jpg', 'img/tUC058-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Pineal Ventana</div><div class="albumname">Malpractice</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC056">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC056-small.jpg', 'img/tUC056-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC056/"><div class="releaseartist">Jupiter 88</div><div class="releasename">Jupiter 88 EP</div></a></div>
+	<a href="http://localhost:1313/releases/tUC056/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC056-small.jpg', 'img/tUC056-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Jupiter 88</div><div class="albumname">Jupiter 88 EP</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC055">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC055-small.jpg', 'img/tUC055-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC055/"><div class="releaseartist">UnFolkUs</div><div class="releasename">UnFolkUs</div></a></div>
+	<a href="http://localhost:1313/releases/tUC055/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC055-small.jpg', 'img/tUC055-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">UnFolkUs</div><div class="albumname">UnFolkUs</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC046">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC046-small.jpg', 'img/tUC046-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC046/"><div class="releaseartist">Bethany Curve</div><div class="releasename">Gold</div></a></div>
+	<a href="http://localhost:1313/releases/tUC046/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC046-small.jpg', 'img/tUC046-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Bethany Curve</div><div class="albumname">Gold</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC045">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC045-small.jpg', 'img/tUC045-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC045/"><div class="releaseartist">Bill Horist</div><div class="releasename">Soylent Radio</div></a></div>
+	<a href="http://localhost:1313/releases/tUC045/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC045-small.jpg', 'img/tUC045-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Bill Horist</div><div class="albumname">Soylent Radio</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC041">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC041-small.jpg', 'img/tUC041-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC041/"><div class="releaseartist">SubArachnoid Space</div><div class="releasename">Ether Or</div></a></div>
+	<a href="http://localhost:1313/releases/tUC041/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC041-small.jpg', 'img/tUC041-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">SubArachnoid Space</div><div class="albumname">Ether Or</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC034">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC034-small.jpg', 'img/tUC034-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC034/"><div class="releaseartist">Bethany Curve</div><div class="releasename">Skies A Crossed Sky</div></a></div>
+	<a href="http://localhost:1313/releases/tUC034/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC034-small.jpg', 'img/tUC034-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Bethany Curve</div><div class="albumname">Skies A Crossed Sky</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC021">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC021-small.jpg', 'img/tUC021-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC021/"><div class="releaseartist"></div><div class="releasename">Nocturne Concrète Compilation</div></a></div>
+	<a href="http://localhost:1313/releases/tUC021/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC021-small.jpg', 'img/tUC021-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist"></div><div class="albumname">Nocturne Concrète Compilation</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC018">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC018-small.png', 'img/tUC018-small@2X.png')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC018/"><div class="releaseartist">Intonarumori</div><div class="releasename">Sound Collages 1991-1995</div></a></div>
+	<a href="http://localhost:1313/releases/tUC018/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC018-small.png', 'img/tUC018-small@2X.png')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Intonarumori</div><div class="albumname">Sound Collages 1991-1995</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC015">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC015-small.jpg', 'img/tUC015-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC015/"><div class="releaseartist">The Garden</div><div class="releasename">A Doll&#39;s Life 7&#34;</div></a></div>
+	<a href="http://localhost:1313/releases/tUC015/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC015-small.jpg', 'img/tUC015-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">The Garden</div><div class="albumname">A Doll&#39;s Life 7&#34;</div></div></a>
 </div>
 
 <div class="releaselistitem" id="tUC013">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC013-small.jpg', 'img/tUC013-small@2X.jpg')" width="150" height="150" /></div>
-	<div class="releasename"><a href="http://localhost:1313/releases/tUC013/"><div class="releaseartist">Vassily</div><div class="releasename">Kym/Allegory 7&#34;</div></a></div>
+	<a href="http://localhost:1313/releases/tUC013/"><div class="releaseimage"><img onload="getImgSrc(this, 'img/tUC013-small.jpg', 'img/tUC013-small@2X.jpg')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">Vassily</div><div class="albumname">Kym/Allegory 7&#34;</div></div></a>
 </div>
 
 </div>
@@ -302,8 +355,18 @@
   ga('create', 'UA-96028-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script>
 
+<script type="text/javascript" src="js/vendor/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.scroller').slick({
+            autoplay: true,
+            autoplaySpeed: 8000
+        });
+        $('#newsheader #years').css("visibility", "visible")
+    });
+</script>
+<script>
 $(document).ready(function(){
   
   var images = $('img:not([src=""])');

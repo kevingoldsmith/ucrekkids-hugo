@@ -1,20 +1,11 @@
 {{ partial "headstart.html" . }}
-<style type="text/css">
-.releaselistitem {
-	display: block;
-	width: 150px;
-	height: 220px;
-	float: left;
-	padding: 5px;
-}
-</style>
 {{ partial "headend.html" . }}
 <h1>Releases</h1>
 <div id="releaselist">
 {{ range where .Data.Pages "Section" "releases" }}
 <div class="releaselistitem">
-	<div class="releaseimage"><img onload="getImgSrc(this, '../img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', '../img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
-	<div class="releasename"><a href="{{ .Permalink }}"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></a></div>
+	<a href="{{ .Permalink }}"><div class="releaseimage"><img onload="getImgSrc(this, '../img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', '../img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></div></a>
 </div>
 {{ end }}
 </div>

@@ -1,0 +1,11 @@
+<script>
+$(document).ready(function(){
+  // fire onload trigger on IMG tags that have empty SRC attribute
+  var images = $('img:not([src=""])');
+    images.each(function(i) {
+        $(this).trigger('onload');            
+    });
+});
+</script>
+</body>
+</html>

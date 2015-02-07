@@ -32,4 +32,4 @@ image = "BethanyCurve"
 	url = "http://www.bethanycurve.com/"
 
 +++
-Bethany Curve is Richard Millang on guitar and vocals, David MacWha on drums and Ray Lake on guitar and vocals. They are from Santa Cruz, California. They were formed in 1994. Bethany Curve are Unit Circle's flagship band. Their releases amaze listeners with their craftsmanship and quality. Their motto is "Atmosphere, Arrangement, Sound, Layering and Noise." This fits their music exactly and is exactly why we like them so much.
+Bethany Curve is Richard Millang on guitar and vocals, David MacWha on drums and Ray Lake on guitar and vocals. They are from Santa Cruz, California. They were formed in 1994. Bethany Curve's releases amaze listeners with their craftsmanship and quality. The bands' motto is "Atmosphere, Arrangement, Sound, Layering and Noise." This fits their music exactly and is exactly why we like them so much.

@@ -77,6 +77,21 @@
     <script src="http://localhost:1313/js/vendor/modernizr-2.6.2.min.js"></script>
 
 <link rel="stylesheet" href="http://localhost:1313/css/releases.css">
+<style>
+.buybutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+.streambutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+#relatedreleases {
+	clear: both;
+}
+</style>
 </head>
 <body>
 
@@ -119,8 +134,22 @@
 
 <div id="storesection">
 <div class="sectiontitle">Available from:</div>
-<a href="http://www.cdbaby.com/unitcircle2">cdbaby</a> <a href="http://www.amazon.com/exec/obidos/ASIN/B000035X5I/booksforvirtualw/">amazon</a> 
 
+<div class="buybutton">
+
+<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='http://www.cdbaby.com/unitcircle2' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
+
+</div>
+
+<div class="buybutton">
+
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000035X5I/booksforvirtualw/"><img onload="getImgSrc(this, '../../img/amazon.png','../../img/amazon@2X.png')" width="89" height="40" alt="amazon" /></a>
+
+</div>
+
+<div>
+
+</div>
 </div>
 
 
@@ -222,8 +251,8 @@
   ga('create', 'UA-96028-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script>
 
+<script>
 $(document).ready(function(){
   
   var images = $('img:not([src=""])');
@@ -237,3 +266,4 @@ $(document).ready(function(){
 		+ ':1313/livereload.js?mindelay=10"></'
         + 'script>')</script></body>
 </html>
+

@@ -1,20 +1,9 @@
 {{ partial "headstart.html" . }}
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <style type="text/css">
-.releaselistitem {
-	display: block;
-	width: 150px;
-	float: left;
-	padding: 5px;
-	height: 220px;
-}
-.artistlistitem {
-	display: block;
-	width: 150px;
-	float: left;
-	padding: 5px;
-}
 #artistlist {
 	clear: both;
+	padding-top: 20px;
 }
 #releaselist {
 	padding-top: 1.5em;
@@ -23,14 +12,78 @@
 #other {
 	clear: both;
 }
+#newsheader {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 2px 0;
+	height: 260px;
+}
+#newsheader #l-st #intalbum {
+	float: left;
+	padding-right: .5em;
+}
+#newsheader #years {
+	background-image: url("img/SonicFutureNow.png");
+	width: 100%;
+	height: 225px;
+	visibility: hidden;
+}
+#newsheader #years #text {
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	font-family: "Verdana", sans-serif;
+	text-shadow: 2px 2px 2px #555;
+}
+#labelmission {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* override slider margin from included file */
+.slick-slider {
+margin-bottom: 20px;
+}
 </style>
 {{ partial "headend.html" . }}
-<div id="artistlist">		
+<div id="newsheader" class="scroller">
+	<div id="l-st">
+		<table>
+			<tr>
+				<td colspan="2">
+					<div class="sectiontitle">Latest Release</div>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="releases/tUC090/"><img onload="getImgSrc(this, 'img/tUC090-large.jpg', 'img/tUC090-large@2X.jpg')" width="225" height="225" /></a></td>
+				<td valign="top"><div style="padding-left: 5px">Unit Circle is proud to announce its' first new release in ten years. The long awaited new album from <a href="artists/Intonarumori/">Intonarumori</a>, <a href="releases/tUC090/">L-ST</a></div></td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td colspan="2">
+					<div class="sectiontitle">Next Release</div>
+				</td>
+			</tr>
+			<tr>
+				<td><img onload="getImgSrc(this, 'img/tUC091-large.jpg', 'img/tUC091-large@2X.jpg')" width="225" height="225" /></td>
+				<td valign="top"><div style="padding-left: 5px; font-weight: bold">Answers to April - Lilium</div><div style="padding-left: 5px">A first release from a new project by <a href="artists/Intonarumori/">Intonarumori</a>'s Kevin Goldsmith. A decidedly different approach, something that harkens back to the earlier work, but with a more melodic style.</div></td>
+			</tr>
+		</table>
+	</div>
+	<div id="years"><div id="text">Unit Circle Rekkids: 24 Years</div></div>
+</div>
+<div id="labelmission">Unit Circle Rekkids has been a labor of love for 24 years. Dedicated to showcasing unconventional music, unusual music, challenging music, but also beautiful music. Unit circle helped launch artists like Bill Horist, Bethany Curve, Intonarumori and SubArachnoid Space. While there was a break from releasing new albums for a while, we continued to support our existing roster and catalog. We are now beginning to once again release new music, and we continue to appreciate the support of the fans who have supported us in our mission over the last near quarter of a century.</div>
+<div id="artistlist">
 <div class="sectiontitle">Artists</div>
 {{ range where .Data.Pages.ByTitle "Section" "artists" }}
 <div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="{{ .Permalink }}">{{ .Params.artistname }}</a></div>
+	<a href="{{ .Permalink }}"><div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
+	<div class="artistname">{{ .Params.artistname }}</div></a>
 </div>
 {{ end }}
 </div>
@@ -39,10 +92,21 @@
 <div class="sectiontitle">Releases</div>
 {{ range where .Data.Pages.ByDate.Reverse "Section" "releases" }}
 <div class="releaselistitem" id="{{ .Params.catalogid }}">
-	<div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
-	<div class="releasename"><a href="{{ .Permalink }}"><div class="releaseartist">{{ .Params.artistname }}</div><div class="releasename">{{ .Params.releasename }}</div></a></div>
+	<a href="{{ .Permalink }}"><div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
+	<div class="releasename"><div class="releaseartist">{{ .Params.artistname }}</div><div class="albumname">{{ .Params.releasename }}</div></div></a>
 </div>
 {{ end }}
 </div>
 	
-{{ partial "footer.html" . }}
+{{ partial "footstart.html" . }}
+<script type="text/javascript" src="js/vendor/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.scroller').slick({
+            autoplay: true,
+            autoplaySpeed: 8000
+        });
+        $('#newsheader #years').css("visibility", "visible")
+    });
+</script>
+{{ partial "footend.html" . }}
