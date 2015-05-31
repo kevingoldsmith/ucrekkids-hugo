@@ -19,7 +19,7 @@
 	<link rel="icon" sizes="192x192" href="http://localhost:1313/img/icon-192x192.png">
 	
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Artists">
+	<meta name="apple-mobile-web-app-title" content="tUC091">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/img/apple-touch-icon-180x180-precomposed.png">
 	<link href="http://localhost:1313/img/apple-touch-icon-152x152-precomposed.png" sizes="152x152" rel="apple-touch-icon">
@@ -36,16 +36,37 @@
 	<meta name="msapplication-config" content="http://localhost:1313/browserconfig.xml" />
 
 	
-	<meta name="application-name" content="Artists" />
+	<meta name="application-name" content="tUC091" />
 	<meta name="msapplication-tooltip" content="Get the latest updates!" />
 	<meta name="msapplication-window" content="width=1024;height=768" />
 	<meta name="msapplication-navbutton-color" content="#FF3300" />
 	<meta name="msapplication-starturl" content="./" />
 
     
+    
+    <meta property="og:title" content="Lilium EP"/>
+    <meta property="og:type" content="music.album"/>
+    <meta property="og:url" content="http://localhost:1313/releases/tUC091/"/>
+    
+    
+    <meta property="og:site_name" content="Unit Circle Rekkids"/>
+    <meta property="fb:app_id" content="1424023427843179"/>
+    <meta property="og:description" content="The first release from Stockholm Sweden&#39;s Answers to April"/>
 
-	<title>Artists</title>
-    <meta name="description" content="">
+    
+    <meta name="twitter:card" content="product"/>
+    <meta name="twitter:site" content="@unitcircle"/>
+    <meta name="twitter:creator" content="@unitcircle"/>
+    <meta name="twitter:title" content="Lilium EP"/>
+    <meta name="twitter:description" content="The first release from Stockholm Sweden&#39;s Answers to April"/>
+    
+    
+    <meta name="twitter:domain" content="unitcircle.com"/>
+    <meta name="twitter:url" content="http://localhost:1313/releases/tUC091/">
+    
+
+	<title>tUC091</title>
+    <meta name="description" content="The first release from Stockholm Sweden&#39;s Answers to April">
     <meta name="author" content="Unit Circle Media">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,8 +76,19 @@
     <link rel="stylesheet" href="http://localhost:1313/css/webicons.css">
     <script src="http://localhost:1313/js/vendor/modernizr-2.6.2.min.js"></script>
 
-<style type="text/css">
-#artistlist {
+<link rel="stylesheet" href="http://localhost:1313/css/releases.css">
+<style>
+.buybutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+.streambutton {
+	float:left;
+	margin-right: 5px;
+	height: 45px;
+}
+#relatedreleases {
 	clear: both;
 }
 </style>
@@ -78,72 +110,29 @@
 	<div id="socialmedia"><a class="webicon twitter small" href="http://www.twitter.com/unitcircle/">Twitter</a> <a class="webicon facebook small" href="https://www.facebook.com/UnitCircle">Facebook</a></div>
 </div>
 <div id="body" class="clearfix">
-<h1>Artists</h1>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/AmyDenio-Square.jpg', '../img/AmyDenio-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/AmyDenio/">Amy Denio</a></div>
+<div id="albumheader">
+	<div id="albumimage">
+		<img onload="getImgSrc(this, '../../img/tUC091-large.jpg', '../../img/tUC091-large@2X.jpg')" width="300" height="300" />
+	</div>
+	<div id="albuminfo">
+		<div id="artistname"><a href="../../artists/AnswersToApril">Answers to April</a></div>
+		<div id="albumname">Lilium EP</div>
+		<div id="releaseyear">2015</div>
+		<div id="tracklist">
+			<div id="tracktitle">Tracks</div>
+			<ul>
+			
+			<li>Lilium</li><li>Lilium (Intonarumori Mix)</li><li>Lilium (Bass and Piano Mix)</li><li>Lilium (Demo Mix)</li><li>Reich-Like</li>
+			
+			</ul>
+		</div>
+	</div>
+	<div style="clear:both; padding-bottom: .5em"></div>
+</div>
+<div id="details"><p>Answers to April&rsquo;s first release. An introduction of what is to come from this new project. Featuring four different mixes of the song Lilium, and an early demo track.</p>
 </div>
 
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/AnswersToApril-Square.jpg', '../img/AnswersToApril-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/AnswersToApril/">Answers to April</a></div>
-</div>
 
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/BethanyCurve-Square.jpg', '../img/BethanyCurve-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BethanyCurve/">Bethany Curve</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/BillHorist-Square.jpg', '../img/BillHorist-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BillHorist/">Bill Horist</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/DegenerateArtEnsemble-Square.jpg', '../img/DegenerateArtEnsemble-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/DegenerateArtEnsemble/">Degenerate Art Ensemble</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Intonarumori-Square.jpg', '../img/Intonarumori-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Intonarumori/">Intonarumori</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Jupiter88-Square.jpg', '../img/Jupiter88-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Jupiter88/">Jupiter 88</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Mlumbo-Square.jpg', '../img/Mlumbo-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Mlumbo/">M&#39;lumbo</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/PinealVentana-Square.jpg', '../img/PinealVentana-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/PinealVentana/">Pineal Ventana</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/SubArachnoidSpace-Square.jpg', '../img/SubArachnoidSpace-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/SubArachnoidSpace/">SubArachnoid Space</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/TheGarden-Square.jpg', '../img/TheGarden-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/TheGarden/">The Garden</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/UnFolkUs-Square.jpg', '../img/UnFolkUs-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/UnFolkUs/">UnFolkUs</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Vassily-Square.jpg', '../img/Vassily-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Vassily/">Vassily</a></div>
-</div>
 
 
 

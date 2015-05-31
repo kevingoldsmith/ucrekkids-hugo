@@ -104,6 +104,7 @@ html {
 body {
     position: relative;
     min-height: 100%;
+    min-width: 540px;
 }
 
 a {
@@ -228,6 +229,11 @@ border-left:1px solid #42432d;
     background-color: #DDDDDD;
 }
 
+.artistlistitem img {
+    width: 150px;
+    height: 150px;
+}
+
 .artistlistitem .artistname {
     padding-left:5px;
     padding-right:5px;
@@ -243,6 +249,12 @@ border-left:1px solid #42432d;
     height: 243px;
     background-color: #DDDDDD;
 }
+
+.releaselistitem img {
+    width: 150px;
+    height: 150px;
+}
+
 .releaselistitem .releasename {
     padding-left:5px;
     padding-right:5px;
@@ -250,6 +262,53 @@ border-left:1px solid #42432d;
 }
 .releaselistitem .releasename .releaseartist {
     font-weight: bold;
+}
+
+/*
+ * Phone
+ */
+@media (max-device-width: 320px) {
+    body {
+        min-width: 0px;
+    }
+
+    #body {
+        padding-bottom: 50px;
+    }
+
+    #nav .menu a:link,
+    #nav .menu a:visited {
+        padding:5px 5px 5px 10px;
+    }
+
+    #nav .menu li:first-child a {
+        padding-left: 5px;
+    }
+    
+    #nav #socialmedia {
+      padding: 5px 5px 0px 0px;
+    }
+
+    .artistlistitem {
+        width: 140px;
+        height: 190px;
+    }
+
+    .artistlistitem img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .releaselistitem {
+        width: 140px;
+        height: 235px;
+    }
+
+    .releaselistitem img {
+        width: 140px;
+        height: 140px;
+    }
+
 }
 
 /* ==========================================================================
@@ -358,6 +417,20 @@ border-left:1px solid #42432d;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media (max-device-width: 1024px) {
+    /*Ipad and netbook*/
+    body {
+        min-width: 0px;
+    }
+}
+
+@media (max-device-width: 768px) {
+    /*Ipad and netbook*/
+    body {
+        min-width: 0px;
+    }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */

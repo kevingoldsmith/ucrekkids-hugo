@@ -46,6 +46,20 @@
 .slick-slider {
 margin-bottom: 20px;
 }
+
+/*
+ * Phone Portrait
+ */
+@media (max-device-width: 320px) {
+	html {
+		max-width: 320px;
+	}
+
+	#newsheader {
+		visibility:hidden;
+		height: 0px;
+	}
+}
 </style>
 {{ partial "headend.html" . }}
 <div id="newsheader" class="scroller">
@@ -53,7 +67,7 @@ margin-bottom: 20px;
 		<table>
 			<tr>
 				<td colspan="2">
-					<div class="sectiontitle">Latest Release</div>
+					<div class="sectiontitle">New Release</div>
 				</td>
 			</tr>
 			<tr>
@@ -66,12 +80,12 @@ margin-bottom: 20px;
 		<table>
 			<tr>
 				<td colspan="2">
-					<div class="sectiontitle">Next Release</div>
+					<div class="sectiontitle">New Release</div>
 				</td>
 			</tr>
 			<tr>
 				<td><img onload="getImgSrc(this, 'img/tUC091-large.jpg', 'img/tUC091-large@2X.jpg')" width="225" height="225" /></td>
-				<td valign="top"><div style="padding-left: 5px; font-weight: bold">Answers to April - Lilium</div><div style="padding-left: 5px">A first release from a new project by <a href="artists/Intonarumori/">Intonarumori</a>'s Kevin Goldsmith. A decidedly different approach, something that harkens back to the earlier work, but with a more melodic style.</div></td>
+				<td valign="top"><div style="padding-left: 5px; font-weight: bold"><a href="releases/tUC091/">Answers to April - Lilium</a></div><div style="padding-left: 5px">A first release from a new project by <a href="artists/Intonarumori/">Intonarumori</a>'s Kevin Goldsmith. A decidedly different approach, something that harkens back to the earlier work, but with a more melodic style.</div></td>
 			</tr>
 		</table>
 	</div>
@@ -82,7 +96,7 @@ margin-bottom: 20px;
 <div class="sectiontitle">Artists</div>
 {{ range where .Data.Pages.ByTitle "Section" "artists" }}
 <div class="artistlistitem">
-	<a href="{{ .Permalink }}"><div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
+	<a href="{{ .Permalink }}"><div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" /></div>
 	<div class="artistname">{{ .Params.artistname }}</div></a>
 </div>
 {{ end }}
@@ -92,7 +106,7 @@ margin-bottom: 20px;
 <div class="sectiontitle">Releases</div>
 {{ range where .Data.Pages.ByDate.Reverse "Section" "releases" }}
 <div class="releaselistitem" id="{{ .Params.catalogid }}">
-	<a href="{{ .Permalink }}"><div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" width="150" height="150" /></div>
+	<a href="{{ .Permalink }}"><div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" /></div>
 	<div class="releasename"><div class="releaseartist">{{ .Params.artistname }}</div><div class="albumname">{{ .Params.releasename }}</div></div></a>
 </div>
 {{ end }}
@@ -102,11 +116,15 @@ margin-bottom: 20px;
 <script type="text/javascript" src="js/vendor/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.scroller').slick({
-            autoplay: true,
-            autoplaySpeed: 8000
-        });
-        $('#newsheader #years').css("visibility", "visible")
+    	maxwidth = $('html').css('max-width');
+    	if ( maxwidth > 320 )
+    	{
+	        $('.scroller').slick({
+	            autoplay: true,
+	            autoplaySpeed: 8000
+	        });
+	        $('#newsheader #years').css("visibility", "visible")
+	    }
     });
 </script>
 {{ partial "footend.html" . }}

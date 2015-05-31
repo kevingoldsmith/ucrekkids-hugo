@@ -19,7 +19,7 @@
 	<link rel="icon" sizes="192x192" href="http://localhost:1313/img/icon-192x192.png">
 	
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Artists">
+	<meta name="apple-mobile-web-app-title" content="Answers to April">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/img/apple-touch-icon-180x180-precomposed.png">
 	<link href="http://localhost:1313/img/apple-touch-icon-152x152-precomposed.png" sizes="152x152" rel="apple-touch-icon">
@@ -36,16 +36,37 @@
 	<meta name="msapplication-config" content="http://localhost:1313/browserconfig.xml" />
 
 	
-	<meta name="application-name" content="Artists" />
+	<meta name="application-name" content="Answers to April" />
 	<meta name="msapplication-tooltip" content="Get the latest updates!" />
 	<meta name="msapplication-window" content="width=1024;height=768" />
 	<meta name="msapplication-navbutton-color" content="#FF3300" />
 	<meta name="msapplication-starturl" content="./" />
 
     
+    
+    <meta property="og:title" content="Answers to April"/>
+    <meta property="og:type" content="profile"/>
+    <meta property="og:url" content="http://localhost:1313/artists/AnswersToApril/"/>
+    
+    
+    <meta property="og:site_name" content="Unit Circle Rekkids"/>
+    <meta property="fb:app_id" content="1424023427843179"/>
+    <meta property="og:description" content="Unit Circle Rekkids artists site for Answers to April"/>
 
-	<title>Artists</title>
-    <meta name="description" content="">
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@unitcircle"/>
+    <meta name="twitter:creator" content="@unitcircle"/>
+    <meta name="twitter:title" content="Answers to April"/>
+    <meta name="twitter:description" content="Unit Circle Rekkids artists site for Answers to April"/>
+    
+    
+    <meta name="twitter:domain" content="www.unitcircle.com"/>
+    <meta name="twitter:url" content="http://localhost:1313/artists/AnswersToApril/">
+ 
+
+	<title>Answers to April</title>
+    <meta name="description" content="Unit Circle Rekkids artists site for Answers to April">
     <meta name="author" content="Unit Circle Media">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,9 +76,16 @@
     <link rel="stylesheet" href="http://localhost:1313/css/webicons.css">
     <script src="http://localhost:1313/js/vendor/modernizr-2.6.2.min.js"></script>
 
-<style type="text/css">
-#artistlist {
-	clear: both;
+<style>
+#artist-releases div {
+	padding-top: 10px;
+}
+#artist-releases div:first-child {
+	padding-top: 0px;
+}
+#artist-releases .releaseimage {
+	padding-bottom: 5px;
+	padding-top: 0px;
 }
 </style>
 </head>
@@ -78,73 +106,32 @@
 	<div id="socialmedia"><a class="webicon twitter small" href="http://www.twitter.com/unitcircle/">Twitter</a> <a class="webicon facebook small" href="https://www.facebook.com/UnitCircle">Facebook</a></div>
 </div>
 <div id="body" class="clearfix">
-<h1>Artists</h1>
+<div id="artist-releases">
 
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/AmyDenio-Square.jpg', '../img/AmyDenio-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/AmyDenio/">Amy Denio</a></div>
+<div>RELEASES</div>
+
+
+<div class="releaseimage"><a href="/releases/tUC091"><img onload="getImgSrc(this, '/img/tUC091-small.jpg', '/img/tUC091-small@2X.jpg')" width="150" height="150" /></a></div>
+
+
+
+
+
 </div>
+<div id="artist-content">
 
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/AnswersToApril-Square.jpg', '../img/AnswersToApril-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/AnswersToApril/">Answers to April</a></div>
+<img onload="getImgSrc(this, '../../img/AnswersToApril.jpg', '../../img/AnswersToApril@2X.jpg')" width="400" height="200" />
+<h1>Answers to April</h1>
+<p>Answers to April is the new project from Kevin Goldsmith, of <a href="../Intonarumori">Intonarumori</a>, and <a href="../Vassily">Vassily</a>. More melodic than the former and quieter with more electronic elements than the latter.</p>
+
+
+		
+			<div class="sectiontitle">Links</div>
+			
+				<a href="http://answerstoapril.com/">Answers to April Website</a> 
+			
+		
 </div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/BethanyCurve-Square.jpg', '../img/BethanyCurve-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BethanyCurve/">Bethany Curve</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/BillHorist-Square.jpg', '../img/BillHorist-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/BillHorist/">Bill Horist</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/DegenerateArtEnsemble-Square.jpg', '../img/DegenerateArtEnsemble-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/DegenerateArtEnsemble/">Degenerate Art Ensemble</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Intonarumori-Square.jpg', '../img/Intonarumori-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Intonarumori/">Intonarumori</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Jupiter88-Square.jpg', '../img/Jupiter88-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Jupiter88/">Jupiter 88</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Mlumbo-Square.jpg', '../img/Mlumbo-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Mlumbo/">M&#39;lumbo</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/PinealVentana-Square.jpg', '../img/PinealVentana-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/PinealVentana/">Pineal Ventana</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/SubArachnoidSpace-Square.jpg', '../img/SubArachnoidSpace-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/SubArachnoidSpace/">SubArachnoid Space</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/TheGarden-Square.jpg', '../img/TheGarden-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/TheGarden/">The Garden</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/UnFolkUs-Square.jpg', '../img/UnFolkUs-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/UnFolkUs/">UnFolkUs</a></div>
-</div>
-
-<div class="artistlistitem">
-	<div class="artistimage"><img onload="getImgSrc(this, '../img/Vassily-Square.jpg', '../img/Vassily-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="http://localhost:1313/artists/Vassily/">Vassily</a></div>
-</div>
-
 
 
 </div>
