@@ -1,10 +1,10 @@
 </head>
 <body>
-{{ $baseurl := .Site.BaseUrl }}
+{{ $baseurl := .Site.BaseURL }}
 
-{{ "<!--[if lt IE 7]>" | safeHtml }}
-{{ "<p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>" | safeHtml }}
-{{ "<![endif]--> " | safeHtml }}
+{{ "<!--[if lt IE 7]>" | safeHTML }}
+{{ "<p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>" | safeHTML }}
+{{ "<![endif]--> " | safeHTML }}
 <div id="nav">
 	<img id="logo" onload="getImgSrc(this, '{{ $baseurl }}/img/uclogo.png', '{{ $baseurl }}/img/uclogo@2X.png')" width="50" height="50" />
 	<ul class="menu">

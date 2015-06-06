@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-{{ "<!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->" | safeHtml }}
-{{ "<!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->" | safeHtml }}
-{{ "<!--[if IE 8]>         <html class=\"no-js lt-ie9\"> <![endif]-->" | safeHtml }}
-{{ "<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->" | safeHtml }}
+{{ "<!--[if lt IE 7]>      <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\"> <![endif]-->" | safeHTML }}
+{{ "<!--[if IE 7]>         <html class=\"no-js lt-ie9 lt-ie8\"> <![endif]-->" | safeHTML }}
+{{ "<!--[if IE 8]>         <html class=\"no-js lt-ie9\"> <![endif]-->" | safeHTML }}
+{{ "<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->" | safeHTML }}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- FAVICON -->
 	<!-- Desktop Browsers -->
-	<link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseUrl }}/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="{{ .Site.BaseUrl }}/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}/favicon.ico" />
 
 	<!-- Android: Chrome M39 and up-->
-	<link rel="manifest" href="{{ .Site.BaseUrl }}/manifest.json">
+	<link rel="manifest" href="{{ .Site.BaseURL }}/manifest.json">
 	<!-- Android: Chrome M31 and up, ignored if manifest is present-->
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="icon" sizes="192x192" href="{{ .Site.BaseUrl }}/img/icon-192x192.png">
+	<link rel="icon" sizes="192x192" href="{{ .Site.BaseURL }}/img/icon-192x192.png">
 	<!-- iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="{{ .Title }}">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseUrl }}/img/apple-touch-icon-180x180-precomposed.png">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-152x152-precomposed.png" sizes="152x152" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-144x144-precomposed.png" sizes="144x144" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-120x120-precomposed.png" sizes="120x120" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-114x114-precomposed.png" sizes="114x114" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-76x76-precomposed.png" sizes="76x76" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-72x72-precomposed.png" sizes="72x72" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-60x60-precomposed.png" sizes="60x60" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-57x57-precomposed.png" sizes="57x57" rel="apple-touch-icon">
-	<link href="{{ .Site.BaseUrl }}/img/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/img/apple-touch-icon-180x180-precomposed.png">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-152x152-precomposed.png" sizes="152x152" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-144x144-precomposed.png" sizes="144x144" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-120x120-precomposed.png" sizes="120x120" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-114x114-precomposed.png" sizes="114x114" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-76x76-precomposed.png" sizes="76x76" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-72x72-precomposed.png" sizes="72x72" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-60x60-precomposed.png" sizes="60x60" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-57x57-precomposed.png" sizes="57x57" rel="apple-touch-icon">
+	<link href="{{ .Site.BaseURL }}/img/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
 	<!-- Windows 8 and IE 11 -->
-	<meta name="msapplication-config" content="{{ .Site.BaseUrl }}/browserconfig.xml" />
+	<meta name="msapplication-config" content="{{ .Site.BaseURL }}/browserconfig.xml" />
 
 	<!-- Windows -->
 	<meta name="application-name" content="{{ .Title }}" />
@@ -92,7 +92,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/normalize.css">
-    <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/main.css">
-    <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/webicons.css">
-    <script src="{{ .Site.BaseUrl }}/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/webicons.css">
+    <script src="{{ .Site.BaseURL }}/js/vendor/modernizr-2.6.2.min.js"></script>

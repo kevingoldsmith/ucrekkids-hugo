@@ -205,16 +205,6 @@ border-left:1px solid #42432d;
     padding-right: 5px;
 }
 
-#artist-releases {
-    float: left;
-    padding-top: 15px;
-    width: 155px;
- }
-
-#artist-content {
-    padding-left: 170px;
-}
-
 .sectiontitle {
     font-size: 1.25em;
     font-weight: bolder;
@@ -265,9 +255,9 @@ border-left:1px solid #42432d;
 }
 
 /*
- * Phone
+ * Phone Portrait
  */
-@media (max-device-width: 320px) {
+@media (max-device-width: 320px), (max-device-width: 375px), (max-device-width: 414px) {
     body {
         min-width: 0px;
     }
@@ -310,6 +300,59 @@ border-left:1px solid #42432d;
     }
 
 }
+
+/*
+ * iPhone6 Portrait
+ */
+@media (max-device-width: 375px) {
+    .artistlistitem {
+        width: 110px;
+        height: 175px;
+    }
+
+    .artistlistitem img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .releaselistitem {
+        width: 110px;
+        height: 235px;
+    }
+
+    .releaselistitem img {
+        width: 110px;
+        height: 110px;
+    }
+
+}
+
+/*
+ * iPhone6+ Portrait
+ */
+@media (max-device-width: 414px) {
+    .artistlistitem {
+        width: 120px;
+        height: 175px;
+    }
+
+    .artistlistitem img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .releaselistitem {
+        width: 120px;
+        height: 235px;
+    }
+
+    .releaselistitem img {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
 
 /* ==========================================================================
    Helper classes

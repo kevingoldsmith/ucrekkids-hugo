@@ -1,44 +1,42 @@
 {{ partial "headstart.html" . }}
-<style>
-#artist-releases div {
-	padding-top: 10px;
-}
-#artist-releases div:first-child {
-	padding-top: 0px;
-}
-#artist-releases .releaseimage {
-	padding-bottom: 5px;
-	padding-top: 0px;
-}
-</style>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/artists.css">
 {{ partial "headend.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+<div id="artist-header">
+	<!-- FIX: fix path -->
+	<img id="artist-image" onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .Params.image }}.jpg', '{{ $baseurl }}/img/{{ .Params.image }}@2X.jpg')" />
+	<h1>{{ .Params.artistname }}</h1>
+</div>
 <div id="artist-releases">
 {{ if isset .Params "albums" }}
-<div>RELEASES</div>
+<div class="release-section-title">RELEASES</div>
 {{ range index .Params "albums" }}
 {{ if isset . "extension" }}
-<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" width="150" height="150" /></a></div>
+<div class="releaseimage"><a href="{{ $baseurl }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ $baseurl }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" /></a></div>
 {{ else }}
-<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.jpg', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.jpg')" width="150" height="150" /></a></div>
+<div class="releaseimage"><a href="{{ $baseurl }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .catalogid }}-small.jpg', '{{ $baseurl }}/img/{{ .catalogid }}-small@2X.jpg')" /></a></div>
 {{ end }}
 {{ end }}
 {{ end }}
 
 {{ if isset .Params "compilations" }}
-<div>COMPILATIONS</div>
+<div class="release-section-title">COMPILATIONS</div>
 {{ range index .Params "compilations" }}
 {{ if isset . "extension" }}
-<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" width="150" height="150" /></a></div>
+<div class="releaseimage"><a href="{{ $baseurl }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .catalogid }}-small.{{ .extension }}', '{{ $baseurl }}/img/{{ .catalogid }}-small@2X.{{ .extension }}')" /></a></div>
 {{ else }}
-<div class="releaseimage"><a href="{{ .Site.BaseURL }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small.jpg', '{{ .Site.BaseURL }}/img/{{ .catalogid }}-small@2X.jpg')" width="150" height="150" /></a></div>
+<div class="releaseimage"><a href="{{ $baseurl }}/releases/{{ .catalogid }}"><img onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .catalogid }}-small.jpg', '{{ $baseurl }}/img/{{ .catalogid }}-small@2X.jpg')" /></a></div>
 {{ end }}
 {{ end }}
 {{ end }}
 </div>
 <div id="artist-content">
-<!-- FIX: fix path -->
-<img onload="getImgSrc(this, '../../img/{{ .Params.image }}.jpg', '../../img/{{ .Params.image }}@2X.jpg')" width="400" height="200" />
-<h1>{{ .Params.artistname }}</h1>
+	<!-- FIX: fix path -->
+	<div id="artist-content-header">
+		<img id="artist-image" onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .Params.image }}.jpg', '{{ $baseurl }}/img/{{ .Params.image }}@2X.jpg')" />
+		<h1>{{ .Params.artistname }}</h1>
+	</div>
+
 {{ .Content }}
 
 		{{ if isset .Params "artistlinks" }}

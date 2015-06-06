@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Recent Content on Unit Circle Rekkids </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/index.xml/</link>
+    <title>Unit Circle Rekkids</title>
+    <link>http://unitcircle.com/rekkids/</link>
+    <description>Recent content on Unit Circle Rekkids</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-    
-    <updated>Fri, 05 Jun 2015 00:00:00 CEST</updated>
+    <lastBuildDate>Fri, 05 Jun 2015 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://unitcircle.com/rekkids/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>tUC091</title>
-      <link>http://localhost:1313/releases/tUC091/</link>
-      <pubDate>Fri, 05 Jun 2015 00:00:00 CEST</pubDate>
+      <title>Answers to April - Lilium EP</title>
+      <link>http://unitcircle.com/rekkids/releases/tUC091/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0200</pubDate>
       
-      <guid>http://localhost:1313/releases/tUC091/</guid>
-      <description>&lt;p&gt;Answers to April&amp;rsquo;s first release. An introduction of what is to come from this new project. Featuring four different mixes of the song Lilium, and an early demo track.&lt;/p&gt;
+      <guid>http://unitcircle.com/rekkids/releases/tUC091/</guid>
+      <description>&lt;p&gt;Reich-like was the first Answers to April track recorded so long ago, I don&amp;rsquo;t even remember when it was. I knew I had something I liked, but it was so different than everything else I was doing, I didn&amp;rsquo;t know what I wanted to do with it.&lt;/p&gt;
+
+&lt;p&gt;After moving from Seattle to Sweden in 2013, I found myself wanting to move in a different direction than my Intonarumori work. I have been doing that project for over 25 years. I had always appreciated the post-classical or orchestral-pop projects and composers like Max Richter, Ólafur Arnalds, Arca, Balmorhea, Ben Lukas Boysen, and Winged Victory for the Sullen. As I started working on new material it started leaning in that direction. A direction I hope to keep exploring.&lt;/p&gt;
+
+&lt;p&gt;Consider this an introduction, a calling card. I hope that you like it, and I hope to bring you more soon.&lt;/p&gt;
+
+&lt;p&gt;Kevin Goldsmith, Stockholm, Sweden - May 23, 2015&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Answers to April</title>
-      <link>http://localhost:1313/artists/AnswersToApril/</link>
-      <pubDate>Sun, 31 May 2015 00:29:49 CEST</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/AnswersToApril/</link>
+      <pubDate>Sun, 31 May 2015 00:29:49 +0200</pubDate>
       
-      <guid>http://localhost:1313/artists/AnswersToApril/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/AnswersToApril/</guid>
       <description>&lt;p&gt;Answers to April is the new project from Kevin Goldsmith, of &lt;a href=&#34;../Intonarumori&#34;&gt;Intonarumori&lt;/a&gt;, and &lt;a href=&#34;../Vassily&#34;&gt;Vassily&lt;/a&gt;. More melodic than the former and quieter with more electronic elements than the latter.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Vassily</title>
-      <link>http://localhost:1313/artists/Vassily/</link>
-      <pubDate>Sun, 11 Jan 2015 19:53:05 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/Vassily/</link>
+      <pubDate>Sun, 11 Jan 2015 19:53:05 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/Vassily/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/Vassily/</guid>
       <description>&lt;p&gt;Vassily formed in Seattle in the fall of 1994 and was playing regular live shows by the spring of 1995. They described their sound as &amp;ldquo;Visigoth Rock.&amp;rdquo; It was a strange mixture of dark rock and post-grunge. Two labels that they hated. The band disbanded late in 1995.&lt;/p&gt;
 
 &lt;p&gt;The band featured Ray Hodder on Vocals, Dave Miller on Guitar, Steve Phun on Drums, The Guitarist formerly known as David on Guitar and Kevin wHATEver on bass.&lt;/p&gt;
@@ -43,10 +49,10 @@
     
     <item>
       <title>UnFolkUs</title>
-      <link>http://localhost:1313/artists/UnFolkUs/</link>
-      <pubDate>Sun, 11 Jan 2015 19:27:55 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/UnFolkUs/</link>
+      <pubDate>Sun, 11 Jan 2015 19:27:55 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/UnFolkUs/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/UnFolkUs/</guid>
       <description>&lt;p&gt;UnFolkUs featured Eveline Muller-Graf on sharp metal objects (she also played on the first &lt;a href=&#34;../Intonarumori/&#34;&gt;Intonarumori&lt;a&gt; album), &lt;a href=&#34;../BillHorist/&#34;&gt;Bill Horist&lt;/a&gt; on Guitar, Paul Hoskin on Contrabass Clarinet, and Rob Bageant on Chapman Stick.&lt;/p&gt;
 
 &lt;p&gt;UnFolkUs was launched in the summer of 1996 as an untamed, noise-based improv ensemble, almost as happy to be run out of downtown art galleries as they were to incite raucous approval. Not content to remain in place, the band have since explored a vast range of improvised soundscapes and lineups, maturing into an ensemble with a tremendous depth of communication and intesely broad palette of expression. The band have discovered and explored depths of quietude as deep as their walls of noise were tall (which is not to say that they don&amp;rsquo;t retain a penchant for well-placed sonic assaults).&lt;/p&gt;
@@ -57,30 +63,30 @@
     
     <item>
       <title>The Garden</title>
-      <link>http://localhost:1313/artists/TheGarden/</link>
-      <pubDate>Sun, 11 Jan 2015 00:36:02 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/TheGarden/</link>
+      <pubDate>Sun, 11 Jan 2015 00:36:02 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/TheGarden/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/TheGarden/</guid>
       <description>&lt;p&gt;Formed in 1985, in Pittsburgh, The Garden was a long-lived, unique-sounding gothic project. The Garden featured Christine Sacramento on guitars, keyboards and drum programing; Anthony Lacava on bass; Stephen Marlette on vocals; and Shelly O&amp;rsquo;Keefe on percussion and keyboards.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>SubArachnoid Space</title>
-      <link>http://localhost:1313/artists/SubArachnoidSpace/</link>
-      <pubDate>Sun, 11 Jan 2015 00:05:00 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/SubArachnoidSpace/</link>
+      <pubDate>Sun, 11 Jan 2015 00:05:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/SubArachnoidSpace/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/SubArachnoidSpace/</guid>
       <description>&lt;p&gt;Founded in San Francisco in 1996, SubArachnoid Space is a four-piece psychedelic improvisational group. Their music can be difficult, dense and intense as well as dreamy, but it&amp;rsquo;s always hallucinatory, going for a mental place where there are no rules. Their definition of psychedelic isn&amp;rsquo;t coming from some mainstream &amp;ldquo;hippie&amp;rdquo; place. Instead, it&amp;rsquo;s music that comes from deep inside and has the ability to pull the listener into some other place in an intense way.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Pineal Ventana</title>
-      <link>http://localhost:1313/artists/PinealVentana/</link>
-      <pubDate>Sat, 10 Jan 2015 23:47:34 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/PinealVentana/</link>
+      <pubDate>Sat, 10 Jan 2015 23:47:34 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/PinealVentana/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/PinealVentana/</guid>
       <description>&lt;p&gt;As unpredictable as the path of a thunderstorm over the Mountains of Madness, the music of Pineal Ventana, roars out of that hostile alternate dimension which H.P. Lovercraft described as &amp;ldquo;the spaces between.&amp;rdquo; - Creative Loafing&lt;/p&gt;
 
 &lt;p&gt;Atlanta&amp;rsquo;s Pineal Ventana are almost the Unit Circle uber-band. Formed in 1993, they embody the ideals of experimentation, exploration, and genre-defying, that we like in all of our releases. That they can do this while maintaining a good tour schedule and amazing stage performances is just icing&amp;hellip;&lt;/p&gt;
@@ -91,20 +97,20 @@
     
     <item>
       <title>M&#39;lumbo</title>
-      <link>http://localhost:1313/artists/Mlumbo/</link>
-      <pubDate>Sat, 10 Jan 2015 23:35:30 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/Mlumbo/</link>
+      <pubDate>Sat, 10 Jan 2015 23:35:30 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/Mlumbo/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/Mlumbo/</guid>
       <description>&lt;p&gt;New York City&amp;rsquo;s M&amp;rsquo;Lumbo came to our attention a few short years ago when they sent a tape to the label. I had it playing in my car on the highway. Without realizing it, I passed my intended exit and the next one too. I was totally captured by their spell. I knew that we had to have them on the label. M&amp;rsquo;Lumbo as an entity has since 1984. They first became known as a septet playing jazz-influenced covers of television theme songs. Over time, they slimmed down to a duo and now they exist as a trio musically and a septet again when the entire M&amp;rsquo;Lumbo crew is performing. That tape that we originally heard was of a sort of a world-ambient-jazz, but in a really twisted sort of way. The group is now experimenting with a more electronic sort of sound, yet again in a twisted way. These Knitting Factory regulars will expand your mind. The members of M&amp;rsquo;lumbo and Kobalt 6 are: Ron Boggs, Rob Ray, Kurt Johannes Leege, Matt Bass, Ryan Holsopple, Josh Ferrazano and Nellie Phillips.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Jupiter 88</title>
-      <link>http://localhost:1313/artists/Jupiter88/</link>
-      <pubDate>Sat, 10 Jan 2015 23:22:08 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/Jupiter88/</link>
+      <pubDate>Sat, 10 Jan 2015 23:22:08 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/Jupiter88/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/Jupiter88/</guid>
       <description>&lt;p&gt;&lt;em&gt;We are extremely sad to report the death of Michael MacDonald on April 11th, 2000 in Boston. He was an amazing musician and a good friend. He will be missed.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Boston&amp;rsquo;s Jupiter 88 consists of piano, cello, soprano sax, voice, percussion, tape loops, drum programming and electronics.&lt;/p&gt;
@@ -119,10 +125,10 @@
     
     <item>
       <title>Amy Denio</title>
-      <link>http://localhost:1313/artists/AmyDenio/</link>
-      <pubDate>Sat, 10 Jan 2015 23:04:02 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/AmyDenio/</link>
+      <pubDate>Sat, 10 Jan 2015 23:04:02 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/AmyDenio/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/AmyDenio/</guid>
       <description>&lt;p&gt;Amy Denio first made a name for herself as a &amp;ldquo;serious&amp;rdquo; composer of contemporary classical music. Then, for almost a decade, she was a member of the Seattle-based Billy Tipton Memorial Saxophone Quartet, an all-female ensemble named after a woman who posed as a man to be able to work in the male-dominated jazz world of the 1930&amp;rsquo;s and &amp;lsquo;40&amp;rsquo;s. But just as the quartet was gaining a national reputation, Denio quit to pursue a solo career playing her own odd style of folk-rock, in which she plays saxophone, accordion, bass, and a bunch of other instruments. - From the NPR commentary aired January 11th, 1999&lt;/p&gt;
 
 &lt;p&gt;Of course, she doesn&amp;rsquo;t just perform solo, Amy is and has been a member of such groups as The Tone Dogs, The Pale Nudes, and FoMoFlo. Her most recent major work is for the Austrian chamber ensemble, Die Knödel. It&amp;rsquo;s an oratorio inspired by Italo Calvino&amp;rsquo;s book Invisible Cities.&lt;/p&gt;
@@ -137,10 +143,10 @@
     
     <item>
       <title>Bill Horist</title>
-      <link>http://localhost:1313/artists/BillHorist/</link>
-      <pubDate>Sat, 10 Jan 2015 19:50:59 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/BillHorist/</link>
+      <pubDate>Sat, 10 Jan 2015 19:50:59 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/BillHorist/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/BillHorist/</guid>
       <description>&lt;p&gt;Since moving to Seattle in 1995, BILL HORIST has established himself as a noted improviser/performer along the West Coast and beyond. He has performed over 600 concerts in the past 9 years in the US, Canada, Mexico, Europe and Japan. Bill has performed and/or recorded with Bill Frisell, Wayne Horvitz, KK Null, Matt Chamberlain, Trey Gunn(King Crimson), Chris Cutler, Kawabata Makoto(Acid Mothers Temple), William Hooker, Eugene Chadbourne, Tatsuya Yoshida(Ruins), Shazaad Ismaily, Climax Golden Twins, Haco, Illusion of Safety, Saadet Tuerkoez, Jack Wright, Amy Denio, Uchihashi Kazuhisa, Steve Fisk, Luigi Archetti, Michael White, Christoph Gallio, Eyvind Kang, Lesli Dalaba, Paul Hoskin, Thomas Dimuzio, Wally Shoup, Jessica Lurie, Mason Jones, Jeff Grienke and Tucker Martine among others.&lt;/p&gt;
 
 &lt;p&gt;As a solo artist, Bill’s improvised, prepared guitar work is informed by Hans Reichel, Fred Frith, and Henry Kaiser, but shows a unique style and personality. He has received critical praise internationally from periodicals including The Wire and Alternative Press. Bill has toured the United States twice in support of his CDs “SOYLENT RADIO” and &amp;ldquo;SONGS FROM THE NERVE WHEEL&amp;rdquo; and has appeared at numerous festivals in the US, Mexico and Europe including Taktlos(Zuerich), Spring Reverb(San Diego/Tijuana), Big Sur Experimental Music Fest(Big Sur, CA), Mission Creek Music Fest(San Francisco), Seattle Improvised Music Fest, AntiMatter Fest(Vancouver BC) and Olympia Experimental Music Fest. He was the recipient if the 1997 Jack Straw Artist Assistance Program Grant and has done several presentations for schools from first grade to college-level, including the University of Calgary, Seattle Art Institute and Martin Luther King Elementary (Seattle).&lt;/p&gt;
@@ -153,10 +159,10 @@
     
     <item>
       <title>Degenerate Art Ensemble</title>
-      <link>http://localhost:1313/artists/DegenerateArtEnsemble/</link>
-      <pubDate>Sat, 10 Jan 2015 08:23:31 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/DegenerateArtEnsemble/</link>
+      <pubDate>Sat, 10 Jan 2015 08:23:31 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/DegenerateArtEnsemble/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/DegenerateArtEnsemble/</guid>
       <description>&lt;p&gt;The Degenerate Art Ensemble (formerly The Young Composer&amp;rsquo;s Collective) is a big-band-garage-orchestra / movement-theater company - dedicated to the creation of new cutting edge works combining music and other media. The band&amp;rsquo;s &amp;ldquo;eloquently executed high-energy repertoire&amp;rdquo; (SF Weekly), combined with the &amp;ldquo;breathtaking imagery&amp;rdquo; (Seattle PI) of the movement theater ensemble, DAE has created a unique language of expression - raw and passionate - which has earned the ensemble much critical acclaim in recent years.&lt;/p&gt;
 
 &lt;p&gt;Formed in 1993, Seattle&amp;rsquo;s Degenerate Art Ensemble features: Erick Cohn - percussion; Brad Hartman - bass; Joshua Kohl - composer/coductor; Steve Lohrentz - trumpet/composer; Ian-Lee Lucero - electric media; Ben McAllister - electric guitar; Haruko Nishimura - choreographer/vocals; Kendal Seager - violin; Greg Sinibaldi - sax/bass clarinet; Josh Stewart - trumpet/composer; Robert Walker - percussion&lt;/p&gt;
@@ -165,21 +171,26 @@
     
     <item>
       <title>about</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 UTC</pubDate>
+      <link>http://unitcircle.com/rekkids/about/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://unitcircle.com/rekkids/about/</guid>
       <description>
 
-&lt;h2 id=&#34;toc_0&#34;&gt;about us&lt;/h2&gt;
+&lt;h2 id=&#34;about-us:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;about us&lt;/h2&gt;
 
 &lt;p&gt;Unit Circle Rekkids was founded in 1991 and is dedicated to releasing new music and sound art that challenges existing conventions.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;purchase&lt;/h2&gt;
+&lt;h2 id=&#34;purchase:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;purchase&lt;/h2&gt;
 
-&lt;p&gt;Unit Circle CDs and MP3s are available from &lt;a href=&#34;http://cdbaby.com/all/unitcircle&#34; target=&#34;_blank&#34;&gt;CDBaby&lt;/a&gt; or &lt;a href=&#34;http://www.unitcircle.com/amazon.html&#34; target=&#34;_top&#34;&gt;Amazon&lt;/a&gt;. MP3s are available from &lt;a href=&#34;http://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;index=aps&amp;keywords=Unit%20Circle%20Rekkids&amp;linkCode=as2&amp;tag=booksforvirtualw&#34;&gt;Amazon&lt;/a&gt;, &lt;a href=&#34;http://www.cdbaby.com/all/unitcircle&#34;&gt;CDBaby&lt;/a&gt;, and &lt;a href=&#34;https://itunes.apple.com/us/artist/bethany-curve/id4127091?uo=4&#34; target=&#34;itunes_store&#34;&gt;iTunes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;style&gt;
+a {
+    text-decoration: underline;
+}
+&lt;/style&gt;
+Unit Circle CDs and MP3s are available from &lt;a href=&#34;http://cdbaby.com/all/unitcircle&#34; target=&#34;_blank&#34;&gt;CDBaby&lt;/a&gt; or &lt;a href=&#34;http://www.unitcircle.com/amazon.html&#34; target=&#34;_top&#34;&gt;Amazon&lt;/a&gt;. MP3s are available from &lt;a href=&#34;http://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;index=aps&amp;keywords=Unit%20Circle%20Rekkids&amp;linkCode=as2&amp;tag=booksforvirtualw&#34;&gt;Amazon&lt;/a&gt;, &lt;a href=&#34;http://www.cdbaby.com/all/unitcircle&#34;&gt;CDBaby&lt;/a&gt;, and &lt;a href=&#34;https://itunes.apple.com/us/artist/bethany-curve/id4127091?uo=4&#34; target=&#34;itunes_store&#34;&gt;iTunes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;contact&lt;/h2&gt;
+&lt;h2 id=&#34;contact:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;contact&lt;/h2&gt;
 
 &lt;div id=&#34;contact&#34;&gt;&lt;strong&gt;e-mail
   &lt;/strong&gt;
@@ -204,20 +215,20 @@
     
     <item>
       <title>Bethany Curve</title>
-      <link>http://localhost:1313/artists/BethanyCurve/</link>
-      <pubDate>Sat, 27 Dec 2014 11:33:57 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/BethanyCurve/</link>
+      <pubDate>Sat, 27 Dec 2014 11:33:57 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/BethanyCurve/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/BethanyCurve/</guid>
       <description>&lt;p&gt;Bethany Curve is Richard Millang on guitar and vocals, David MacWha on drums and Ray Lake on guitar and vocals. They are from Santa Cruz, California. They were formed in 1994. Bethany Curve&amp;rsquo;s releases amaze listeners with their craftsmanship and quality. The bands&amp;rsquo; motto is &amp;ldquo;Atmosphere, Arrangement, Sound, Layering and Noise.&amp;rdquo; This fits their music exactly and is exactly why we like them so much.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Intonarumori</title>
-      <link>http://localhost:1313/artists/Intonarumori/</link>
-      <pubDate>Sat, 27 Dec 2014 11:32:28 CET</pubDate>
+      <link>http://unitcircle.com/rekkids/artists/Intonarumori/</link>
+      <pubDate>Sat, 27 Dec 2014 11:32:28 +0100</pubDate>
       
-      <guid>http://localhost:1313/artists/Intonarumori/</guid>
+      <guid>http://unitcircle.com/rekkids/artists/Intonarumori/</guid>
       <description>&lt;p&gt;Kevin Goldsmith has been composing under the name &amp;ldquo;Intonarumori&amp;rdquo; since he studied experimental and electronic composition with composer Reza Vali at Carnegie Mellon University in 1990-2. In addition to composing, Kevin performs on a variety of instruments: Cello, 5 String Electric Cello, Bass Guitar, D-Tar (prepared guitar), Synthesizer and Electronics.&lt;/p&gt;
 
 &lt;p&gt;The word &amp;ldquo;Intonarumori&amp;rdquo; is Italian and it means &amp;ldquo;noise intoners.&amp;rdquo; The word comes from the Italian Futurist art movement. The Intonarumori were machines built to mimic the industrial sounds of the age. The Futurist composers created symphonies for the machines. Their concerts often resulted in fist-fights with the audience.&lt;/p&gt;

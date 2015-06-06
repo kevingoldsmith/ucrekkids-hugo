@@ -50,9 +50,9 @@ margin-bottom: 20px;
 /*
  * Phone Portrait
  */
-@media (max-device-width: 320px) {
+@media (max-device-width: 320px), (max-device-width: 375px), (max-device-width: 414px) {
 	html {
-		max-width: 320px;
+		max-width: 100%;
 	}
 
 	#newsheader {
@@ -72,7 +72,7 @@ margin-bottom: 20px;
 			</tr>
 			<tr>
 				<td><a href="releases/tUC090/"><img onload="getImgSrc(this, 'img/tUC090-large.jpg', 'img/tUC090-large@2X.jpg')" width="225" height="225" /></a></td>
-				<td valign="top"><div style="padding-left: 5px">Unit Circle is proud to announce its' first new release in ten years. The long awaited new album from <a href="artists/Intonarumori/">Intonarumori</a>, <a href="releases/tUC090/">L-ST</a></div></td>
+				<td valign="top"><div style="padding-left: 5px">Unit Circle is proud to announce our first new release in ten years. The long awaited new album from <a href="artists/Intonarumori/">Intonarumori</a>, <a href="releases/tUC090/">L-ST</a></div></td>
 			</tr>
 		</table>
 	</div>
@@ -116,12 +116,12 @@ margin-bottom: 20px;
 <script type="text/javascript" src="js/vendor/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-    	maxwidth = $('html').css('max-width');
-    	if ( maxwidth > 320 )
+    	var mq = window.matchMedia( "@media (max-device-width: 320px), (max-device-width: 375px), (max-device-width: 414px)" );
+    	if ( !mq.matches )
     	{
 	        $('.scroller').slick({
 	            autoplay: true,
-	            autoplaySpeed: 8000
+	            autoplaySpeed: 4000
 	        });
 	        $('#newsheader #years').css("visibility", "visible")
 	    }

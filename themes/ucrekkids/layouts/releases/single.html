@@ -1,5 +1,5 @@
 {{ partial "headstart.html" . }}
-<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/releases.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/releases.css">
 <style>
 .buybutton {
 	float:left;
@@ -16,12 +16,13 @@
 }
 </style>
 {{ partial "headend.html" . }}
+{{ $baseurl := .Site.BaseURL }}
 <div id="albumheader">
 	<div id="albumimage">
-		<img onload="getImgSrc(this, '../../img/{{ .Params.catalogid }}-large.{{ .Params.coverextension }}', '../../img/{{ .Params.catalogid }}-large@2X.{{ .Params.coverextension }}')" width="300" height="300" />
+		<img onload="getImgSrc(this, '{{ $baseurl }}/img/{{ .Params.catalogid }}-large.{{ .Params.coverextension }}', '{{ $baseurl }}/img/{{ .Params.catalogid }}-large@2X.{{ .Params.coverextension }}')" width="300" height="300" />
 	</div>
 	<div id="albuminfo">
-		{{ if isset .Params "artistname" }}<div id="artistname"><a href="../../artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a></div>{{ end }}
+		{{ if isset .Params "artistname" }}<div id="artistname"><a href="{{ $baseurl }}/artists/{{ .Params.artistdirectory }}">{{ .Params.artistname }}</a></div>{{ end }}
 		<div id="albumname">{{ .Params.releasename }}</div>
 		<div id="releaseyear">{{ .Params.releaseyear }}</div>
 		<div id="tracklist">
@@ -29,7 +30,7 @@
 			<ul>
 			{{ if isset .Params "compilationtracklist" }}
 			{{ range .Params.compilationtracklist }}
-			<li><span class="compartist">{{ if isset . "artisturl" }}<a href="../../artists/{{ .artisturl }}">{{ .artist }}</a>{{ else }}{{ .artist }}{{ end }}</span> - {{ .title }}</li>
+			<li><span class="compartist">{{ if isset . "artisturl" }}<a href="{{ $baseurl }}/artists/{{ .artisturl }}">{{ .artist }}</a>{{ else }}{{ .artist }}{{ end }}</span> - {{ .title }}</li>
 			{{ end }}
 			{{ else }}
 			{{ range .Params.tracklist }}<li>{{ . }}</li>{{ end }}
@@ -102,7 +103,7 @@
 	<dl>
 	{{ range index .Params "reviews" }}
 	<dt id="{{ .id }}">{{ if isset . "url" }}<a href="{{ .url }}">{{ .reviewer }}</a>{{ else }}{{ .reviewer }}{{ end }}{{ if isset . "issue" }} - {{ .issue }}{{ end }}</dt>
-	<dd>{{ .review | safeHtml }}{{ if isset . "author" }} - {{ .author }}{{ end }}</dd>
+	<dd>{{ .review | safeHTML }}{{ if isset . "author" }} - {{ .author }}{{ end }}</dd>
 	{{ end }}
 </dl>
 </div>

@@ -67,3 +67,15 @@
 	margin-bottom: 0;
 }
 
+/*
+ * Phone
+ */
+@media (max-device-width: 320px), (max-device-width: 375px), (max-device-width: 414px) {
+	#albuminfo {
+		clear:both;
+	}
+	#relatedreleases .relatedcover {
+		padding-right: 2px;
+		padding-top: 2px;
+	}
+}

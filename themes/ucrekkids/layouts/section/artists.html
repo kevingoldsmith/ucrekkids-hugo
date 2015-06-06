@@ -7,10 +7,11 @@
 {{ partial "headend.html" . }}
 <h1>Artists</h1>
 {{ range where .Data.Pages.ByTitle "Section" "artists" }}
+<a href="{{ .Permalink }}">
 <div class="artistlistitem">
 	<div class="artistimage"><img onload="getImgSrc(this, '../img/{{ .Params.image }}-Square.jpg', '../img/{{ .Params.image }}-Square@2X.jpg')" width="150" height="150" /></div>
-	<div class="artistname"><a href="{{ .Permalink }}">{{ .Params.artistname }}</a></div>
-</div>
+	<div class="artistname">{{ .Params.artistname }}</div>
+</div></a>
 {{ end }}
 
 {{ partial "footer.html" . }}
