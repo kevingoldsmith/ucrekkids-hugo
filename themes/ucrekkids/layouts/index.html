@@ -116,9 +116,11 @@ margin-bottom: 20px;
 <script type="text/javascript" src="js/vendor/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-    	var mq = window.matchMedia( "@media (max-device-width: 320px), (max-device-width: 375px), (max-device-width: 414px)" );
-    	if ( !mq.matches )
-    	{
+		var iphone4 = (window.screen.height == (960 / 2));
+		var iphone5 = (window.screen.height == (1136 / 2));
+		var iphone6 = (window.screen.height == (1334 / 2));
+		if ( !iphone4 && !iphone5 && !iphone6 )
+		{
 	        $('.scroller').slick({
 	            autoplay: true,
 	            autoplaySpeed: 4000
