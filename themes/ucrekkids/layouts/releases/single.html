@@ -47,13 +47,13 @@
 {{ range .Params.storelinks }}
 <div class="buybutton">
 {{ if eq .store "cdbaby" }}
-<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(https://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='{{ .url }}' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/cdbaby.png','../../img/cdbaby@2X.png')" width="120" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "amazon" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazon.png','../../img/amazon@2X.png')" width="89" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "amazonmp3" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazonmp3.png','../../img/amazonmp3@2X.png')" width="125" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "itunes" }}
-<a href="{{ .url }}" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/itunes.png','../../img/itunes@2X.png')" width="107" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "bandcamp" }}
 <a href="{{ .url }}"><img width="192" height="40" alt="{{ .store }}" src="https://s1.bcbits.com/img/buttons/bandcamp_130x27_white.png" /></a>
 {{ else }}
