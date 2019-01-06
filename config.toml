@@ -1,5 +1,7 @@
-baseurl = "http://unitcircle.com/rekkids"
+baseurl = "https://unitcircle.com/rekkids"
 theme = "ucrekkids"
 languageCode = "en-us"
 title = "Unit Circle Rekkids"
 MetaDataFormat = "toml"
+disablePathToLower = "true"
+

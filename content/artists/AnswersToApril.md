@@ -7,7 +7,7 @@ title = "Answers to April"
 
 [[artistlinks]]
 name = "Answers to April Website"
-url = "http://answerstoapril.com/"
+url = "https://answerstoapril.com/"
 
 [menu.artists]
 	name="Answers to April"

@@ -7,7 +7,7 @@ title = "Amy Denio"
 
 [[artistlinks]]
 name = "Amy Denio Website"
-url = "http://www.amydenio.com/"
+url = "https://www.amydenio.com/"
 
 [menu.artists]
 	name="Amy Denio"

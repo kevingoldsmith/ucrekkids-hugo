@@ -15,7 +15,7 @@ title = "Degenerate Art Ensemble"
 
 [[artistlinks]]
 	name="Degenerate Art Ensemble website"
-	url = "http://www.degenerateartensemble.com/"
+	url = "https://www.degenerateartensemble.com/"
 
 +++
 The Degenerate Art Ensemble (formerly The Young Composer's Collective) is a big-band-garage-orchestra / movement-theater company - dedicated to the creation of new cutting edge works combining music and other media. The band's "eloquently executed high-energy repertoire" (SF Weekly), combined with the "breathtaking imagery" (Seattle PI) of the movement theater ensemble, DAE has created a unique language of expression - raw and passionate - which has earned the ensemble much critical acclaim in recent years.

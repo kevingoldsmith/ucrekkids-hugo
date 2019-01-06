@@ -35,7 +35,7 @@ image = "Intonarumori"
 
 [[artistlinks]]
 	name="Intonarumori website"
-	url = "http://intonarumori.com"
+	url = "https://intonarumori.com"
 	
 +++
 Kevin Goldsmith has been composing under the name "Intonarumori" since he studied experimental and electronic composition with composer Reza Vali at Carnegie Mellon University in 1990-2. In addition to composing, Kevin performs on a variety of instruments: Cello, 5 String Electric Cello, Bass Guitar, D-Tar (prepared guitar), Synthesizer and Electronics.

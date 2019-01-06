@@ -47,7 +47,7 @@
 {{ range .Params.storelinks }}
 <div class="buybutton">
 {{ if eq .store "cdbaby" }}
-<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(http://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='{{ .url }}' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
+<div style='width:125px; height:40px; margin:0; padding:0; border:0; background-image:url(https://www.cdbaby.com/Images/Links/linkmkr_btn6_buyalbum.png);'><a href='{{ .url }}' style='display:block; width:125px; height:40px; margin:0; border:0; background-color:transparent;'></a></div>
 {{ else if eq .store "amazon" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazon.png','../../img/amazon@2X.png')" width="89" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "amazonmp3" }}

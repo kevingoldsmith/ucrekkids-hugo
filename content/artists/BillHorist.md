@@ -30,7 +30,7 @@ title = "Bill Horist"
 
 [[artistlinks]]
 	name="Bill Horist's website"
-	url = "http://www.billhorist.com/"
+	url = "https://www.billhorist.com/"
 	
 +++
 Since moving to Seattle in 1995, BILL HORIST has established himself as a noted improviser/performer along the West Coast and beyond. He has performed over 600 concerts in the past 9 years in the US, Canada, Mexico, Europe and Japan. Bill has performed and/or recorded with Bill Frisell, Wayne Horvitz, KK Null, Matt Chamberlain, Trey Gunn(King Crimson), Chris Cutler, Kawabata Makoto(Acid Mothers Temple), William Hooker, Eugene Chadbourne, Tatsuya Yoshida(Ruins), Shazaad Ismaily, Climax Golden Twins, Haco, Illusion of Safety, Saadet Tuerkoez, Jack Wright, Amy Denio, Uchihashi Kazuhisa, Steve Fisk, Luigi Archetti, Michael White, Christoph Gallio, Eyvind Kang, Lesli Dalaba, Paul Hoskin, Thomas Dimuzio, Wally Shoup, Jessica Lurie, Mason Jones, Jeff Grienke and Tucker Martine among others.
