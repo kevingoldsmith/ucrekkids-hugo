@@ -62,53 +62,28 @@ margin-bottom: 20px;
 }
 </style>
 {{ partial "headend.html" . }}
-<div id="newsheader" class="scroller">
-	<div id="l-st">
-		<table>
-			<tr>
-				<td colspan="2">
-					<div class="sectiontitle">New Release</div>
-				</td>
-			</tr>
-			<tr>
-				<td><a href="releases/tUC090/"><img onload="getImgSrc(this, 'img/tUC090-large.jpg', 'img/tUC090-large@2X.jpg')" width="225" height="225" /></a></td>
-				<td valign="top"><div style="padding-left: 5px">Unit Circle is proud to announce our first new release in ten years. The long awaited new album from <a href="artists/Intonarumori/">Intonarumori</a>, <a href="releases/tUC090/">L-ST</a></div></td>
-			</tr>
-		</table>
-	</div>
-	<div>
-		<table>
-			<tr>
-				<td colspan="2">
-					<div class="sectiontitle">New Release</div>
-				</td>
-			</tr>
-			<tr>
-				<td><img onload="getImgSrc(this, 'img/tUC091-large.jpg', 'img/tUC091-large@2X.jpg')" width="225" height="225" /></td>
-				<td valign="top"><div style="padding-left: 5px; font-weight: bold"><a href="releases/tUC091/">Answers to April - Lilium</a></div><div style="padding-left: 5px">A first release from a new project by <a href="artists/Intonarumori/">Intonarumori</a>'s Kevin Goldsmith. A decidedly different approach, something that harkens back to the earlier work, but with a more melodic style.</div></td>
-			</tr>
-		</table>
-	</div>
-	<div id="years"><div id="text">Unit Circle Rekkids: 26 Years</div></div>
-</div>
-<div id="labelmission">Unit Circle Rekkids has been a labor of love for 24 years. Dedicated to showcasing unconventional music, unusual music, challenging music, but also beautiful music. Unit circle helped launch artists like Bill Horist, Bethany Curve, Intonarumori and SubArachnoid Space. While there was a break from releasing new albums for a while, we continued to support our existing roster and catalog. We are now beginning to once again release new music, and we continue to appreciate the support of the fans who have supported us in our mission over the last near quarter of a century.</div>
+<div id="labelmission">Unit Circle Rekkids has been a labor of love since 1991. Dedicated to showcasing unconventional music, unusual music, challenging music, but also beautiful music. Unit circle helped launch artists like Bill Horist, Bethany Curve, Intonarumori and SubArachnoid Space. While there was a break from releasing new albums for a while, we continued to support our existing roster and catalog. We are now beginning to once again release new music, and we continue to appreciate the support of the fans who have supported us in our mission over the last near quarter of a century.</div>
 <div id="artistlist">
 <div class="sectiontitle">Artists</div>
-{{ range where .Data.Pages.ByTitle "Section" "artists" }}
+{{ range where .Site.Pages.ByTitle "Section" "artists" }}
+{{ if .Params.image -}}
 <div class="artistlistitem">
 	<a href="{{ .Permalink }}"><div class="artistimage"><img onload="getImgSrc(this, 'img/{{ .Params.image }}-Square.jpg', 'img/{{ .Params.image }}-Square@2X.jpg')" /></div>
 	<div class="artistname">{{ .Params.artistname }}</div></a>
 </div>
+{{- end }}
 {{ end }}
 </div>
 
 <div id="releaselist">
 <div class="sectiontitle">Releases</div>
-{{ range where .Data.Pages.ByDate.Reverse "Section" "releases" }}
+{{ range where .Site.Pages.ByDate.Reverse "Section" "releases" }}
+{{ if .Params.catalogid -}}
 <div class="releaselistitem" id="{{ .Params.catalogid }}">
 	<a href="{{ .Permalink }}"><div class="releaseimage"><img onload="getImgSrc(this, 'img/{{ .Params.catalogid }}-small.{{ .Params.coverextension }}', 'img/{{ .Params.catalogid }}-small@2X.{{ .Params.coverextension }}')" /></div>
 	<div class="releasename"><div class="releaseartist">{{ .Params.artistname }}</div><div class="albumname">{{ .Params.releasename }}</div></div></a>
 </div>
+{{- end }}
 {{ end }}
 </div>
 	

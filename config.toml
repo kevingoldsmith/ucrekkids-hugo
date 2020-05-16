@@ -6,3 +6,5 @@ MetaDataFormat = "toml"
 disablePathToLower = "true"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+[markup.goldmark.renderer]
+unsafe= true
