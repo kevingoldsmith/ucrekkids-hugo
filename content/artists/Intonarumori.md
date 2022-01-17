@@ -9,6 +9,10 @@ image = "Intonarumori"
 	name="Intonarumori"
 
 [[albums]]
+	name = "1999|2021"
+	catalogid = "tUC092"
+
+[[albums]]
 	name = "L-ST"
 	catalogid = "tUC090"
 
