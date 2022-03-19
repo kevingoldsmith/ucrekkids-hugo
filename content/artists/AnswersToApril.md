@@ -15,7 +15,10 @@ url = "https://answerstoapril.com/"
 [[albums]]
 	name = "Lilium EP"
 	catalogid = "tUC091"
+[[albums]]
+	name = "Molochna"
+	catalogid = "tUC093"
 
 +++
 
-Answers to April is the new project from Kevin Goldsmith, of <a href="../Intonarumori">Intonarumori</a>, and <a href="../Vassily">Vassily</a>. More melodic than the former and quieter with more electronic elements than the latter.
+Answers to April is a project from Kevin Goldsmith, of <a href="../Intonarumori">Intonarumori</a>, and <a href="../Vassily">Vassily</a>. More melodic than the former and quieter with more electronic elements than the latter.
