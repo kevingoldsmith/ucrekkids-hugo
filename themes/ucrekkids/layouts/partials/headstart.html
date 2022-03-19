@@ -47,21 +47,19 @@
     <meta property="og:title" content="{{ .Params.releasename }}"/>
     <meta property="og:type" content="music.album"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
-    <!-- FIX: put album image URL here -->
-    <!-- <meta property="og:image" content="https://www.kevingoldsmith.com/img/me-camera@2x.jpg"/> -->
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/{{ .Params.catalogid }}-large@2X.{{ .Params.coverextension }}"/>
     <meta property="og:site_name" content="Unit Circle Rekkids"/>
     <meta property="fb:app_id" content="1424023427843179"/>
     <meta property="og:description" content="{{ .Description }}"/>
 
     <!-- Twtter Card tags -->
-    <meta name="twitter:card" content="product"/>
+    <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@unitcircle"/>
     <meta name="twitter:creator" content="@unitcircle"/>
     <meta name="twitter:title" content="{{ .Params.releasename }}"/>
     <meta name="twitter:description" content="{{ .Description }}"/>
-    <!-- FIX: put album image URL here -->
-    <!--<meta name="twitter:image" content="https://www.kevingoldsmith.com/img/me-camera@2x.jpg"/>-->
-    <meta name="twitter:domain" content="unitcircle.com"/>
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/{{ .Params.catalogid }}-large@2X.{{ .Params.coverextension }}"/>
+    <meta name="twitter:domain" content="ucrekkids.com"/>
     <meta name="twitter:url" content="{{ .Permalink }}">
     {{ else if eq .Section "artists" }}
     <!-- Facebook Open Graph tags -->
@@ -69,7 +67,7 @@
     <meta property="og:type" content="profile"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     <!-- FIX: put artist image URL here -->
-    <!-- <meta property="og:image" content="https://www.kevingoldsmith.com/img/me-camera@2x.jpg"/> -->
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/{{ .Params.image }}@2X.jpg"/>
     <meta property="og:site_name" content="Unit Circle Rekkids"/>
     <meta property="fb:app_id" content="1424023427843179"/>
     <meta property="og:description" content="{{ .Description }}"/>
@@ -80,8 +78,7 @@
     <meta name="twitter:creator" content="@unitcircle"/>
     <meta name="twitter:title" content="{{ .Params.artistname }}"/>
     <meta name="twitter:description" content="{{ .Description }}"/>
-    <!-- FIX: put album image URL here -->
-    <!--<meta name="twitter:image" content="https://www.kevingoldsmith.com/img/me-camera@2x.jpg"/>-->
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/{{ .Params.image }}@2X.jpg"/>
     <meta name="twitter:domain" content="www.unitcircle.com"/>
     <meta name="twitter:url" content="{{ .Permalink }}">
  {{ end }}
