@@ -70,6 +70,12 @@
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/rdio.png','../../img/rdio@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
 {{ else if eq .service "deezer" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/deezer.png','../../img/deezer@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "youtube music" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/youtube-music.png','../../img/youtube-music@2X.png')" width="117" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "pandora" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/pandora.png','../../img/pandora@2X.png')" width="166" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "apple music" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/apple_music.png','../../img/apple_music@2X.png')" width="140" height="40" alt="{{ .service }}" /></a>
 {{ else }}
 <a href="{{ .url }}">{{ .service }}</a>
 {{ end }}
