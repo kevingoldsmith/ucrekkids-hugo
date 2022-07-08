@@ -55,7 +55,7 @@
 {{ else if eq .store "itunes" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/itunes.png','../../img/itunes@2X.png')" width="107" height="40" alt="{{ .store }}" /></a>
 {{ else if eq .store "bandcamp" }}
-<a href="{{ .url }}"><img width="192" height="40" alt="{{ .store }}" src="https://s1.bcbits.com/img/buttons/bandcamp_130x27_white.png" /></a>
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/bandcamp.png','../../img/bandcamp@2X.png')" width="228" height="40" alt="{{ .store }}" /></a>
 {{ else }}
 <a href="{{ .url }}">{{ .store }}</a>
 {{ end }}
@@ -64,18 +64,24 @@
 <div>
 {{ range .Params.streamlinks }}
 <div class="streambutton">
-{{ if eq .service "spotify" }}
-<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/spotify.png','../../img/spotify@2X.png')" width="175" height="40" alt="{{ .service }}" /></a>
-{{ else if eq .service "rdio" }}
-<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/rdio.png','../../img/rdio@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
-{{ else if eq .service "deezer" }}
-<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/deezer.png','../../img/deezer@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
-{{ else if eq .service "youtube music" }}
-<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/youtube-music.png','../../img/youtube-music@2X.png')" width="117" height="40" alt="{{ .service }}" /></a>
-{{ else if eq .service "pandora" }}
-<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/pandora.png','../../img/pandora@2X.png')" width="166" height="40" alt="{{ .service }}" /></a>
+{{ if eq .service "amazon music" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/amazon_music.png','../../img/amazon_music@2X.png')" width="129" height="40" alt="{{ .service }}" /></a>
 {{ else if eq .service "apple music" }}
 <a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/apple_music.png','../../img/apple_music@2X.png')" width="140" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "deezer" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/deezer.png','../../img/deezer@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "iHeart" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/iHeartRadio.png','../../img/iHeartRadio@2X.png')" width="265" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "pandora" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/pandora.png','../../img/pandora@2X.png')" width="166" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "rdio" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/rdio.png','../../img/rdio@2X.png')" width="116" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "soundcloud" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/soundcloud.png','../../img/soundcloud@2X.png')" width="347" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "spotify" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/spotify.png','../../img/spotify@2X.png')" width="175" height="40" alt="{{ .service }}" /></a>
+{{ else if eq .service "youtube music" }}
+<a href="{{ .url }}"><img onload="getImgSrc(this, '../../img/youtube-music.png','../../img/youtube-music@2X.png')" width="117" height="40" alt="{{ .service }}" /></a>
 {{ else }}
 <a href="{{ .url }}">{{ .service }}</a>
 {{ end }}
