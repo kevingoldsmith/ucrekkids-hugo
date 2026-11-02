@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Unit Circle Rekkids"
 MetaDataFormat = "toml"
 disablePathToLower = "true"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "term"]
 
 [markup.goldmark.renderer]
 unsafe= true

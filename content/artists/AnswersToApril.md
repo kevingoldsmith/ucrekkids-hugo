@@ -21,6 +21,9 @@ url = "https://answerstoapril.com/"
 [[albums]]
 	name = "interlude EP"
 	catalogid = "tUC096"
+[[albums]]
+	name = "Answers to April"
+	catalogid = "tUC104"
 
 +++
 
